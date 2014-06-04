@@ -3,6 +3,7 @@
 <head>
     <title>Greater Grand Forks Robotics Club</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}" type="text/css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" type="text/css" media="screen" title="no title" charset="utf-8">
 </head>
@@ -12,18 +13,24 @@
     </div>
     <div id="greeting">
         <h1 id="fittext1">We're&nbsp;glad&nbsp;you're&nbsp;here.</h1>
-    </div>
-    <div class="container mailing-list">
         <hr>
-        <div id="mc_embed_signup" class="container">
-            <form action="http://ggfrc.us8.list-manage.com/subscribe/post?u=667f8798d4954ac7106d77b28&amp;id=b39fbd60bc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <label id="fittext2" for="mce-EMAIL">Would you like to subscribe to our mailing list?</label>
-                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    </div>
+    <div class="container">
+        <div class="mailing-list">
+            <div id="mc_embed_signup" class="container">
+                <form action="http://ggfrc.us8.list-manage.com/subscribe/post?u=667f8798d4954ac7106d77b28&amp;id=b39fbd60bc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <label id="fittext2" for="mce-EMAIL">Would you like to subscribe to our mailing list?</label>
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
 
-                <div style="position: absolute; left: -5000px;"><input type="text" name="b_667f8798d4954ac7106d77b28_b39fbd60bc" tabindex="-1" value=""></div>
+                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_667f8798d4954ac7106d77b28_b39fbd60bc" tabindex="-1" value=""></div>
 
-                <div><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-            </form>
+                    <div><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </form>
+            </div>
+        </div>
+        <div class="fll-signup">
+            <p>Do you need to sign up for FIRST&reg; LEGO&reg; League?</p>
+            <a href="{{ url_for('fll_registration') }}">Absolutely</a>
         </div>
     </div>
     <script src="{{ url_for('static', filename='js/fittext.js') }}"></script>

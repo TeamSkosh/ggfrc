@@ -3,6 +3,11 @@ body {
     color: #545454;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 #header {
     background: #6A9988;
     border-bottom: 5px solid #545454;
@@ -35,11 +40,16 @@ body {
 
 #greeting h1 {
     line-height: 25%;
+    margin-bottom: 50px;
     width: 100%;
 }
 
-.mailing-list {
+.mailing-list,
+.fll-signup {
+    box-sizing: border-box;
+    float: left;
     padding: 0 25px;
+    width: 50%;
 }
 
 hr {
@@ -49,19 +59,26 @@ hr {
     max-width: 500px;
 }
 
-label[for="mce-EMAIL"] {
+label[for="mce-EMAIL"],
+.fll-signup p {
     color: #6A9988;
     display: block;
-    font-size: 24px;
+    font-size: 23px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 35px;
     max-width: 500px;
     width: 100%;
 }
 
+.fll-signup p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 input[type="email"],
-input[type="submit"] {
+input[type="submit"],
+.fll-signup a
+ {
     border: none;
     border-radius: 10px;
     box-sizing: border-box;
@@ -74,16 +91,37 @@ input[type="submit"] {
     outline: 0;
 }
 
+.fll-signup a {
+    display: inline-block;
+}
+
 input[type="email"] {
     max-width: 500px;
     width: 100%;
 }
 
-input[type="submit"] {
+input[type="submit"],
+.fll-signup a {
     background: rgba(0,0,0,0);
     border: 4px solid #C0C0C0;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover,
+.fll-signup a:hover {
     background: #C0C0C0;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 800px) {
+    .mailing-list,
+    .fll-signup {
+        clear: left;
+        padding: 0;
+        width: 100%;
+    }
+
+    .fll-signup {
+        margin-top: 50px;
+    }
 }
