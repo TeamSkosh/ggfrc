@@ -11,13 +11,20 @@
     <div id="header">
         <img class="logo" src="{{ url_for('static', filename='img/ggfrc-logo-white.svg') }}" alt="ggfrc logo">
     </div>
+    <div id="greeting">
+        <h1>
+            {% block greeting %}
+
+            {% endblock %}
+        </h1>
+        <hr>
+    </div>
     {% block content %}
-    
+
     {% endblock %}
     <script src="{{ url_for('static', filename='js/fittext.js') }}"></script>
     <script type="text/javascript">
       fitText(document.getElementById('fittext1'), 1.1)
-      // fitText(document.getElementById('fittext2'), 2)
     </script>
 </body>
 </html>
