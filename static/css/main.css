@@ -77,8 +77,7 @@ label[for="mce-EMAIL"],
 
 input[type="email"],
 input[type="submit"],
-.fll-signup a
- {
+.fll-signup a {
     border: none;
     border-radius: 10px;
     box-sizing: border-box;
@@ -92,7 +91,7 @@ input[type="submit"],
 }
 
 .fll-signup a {
-    display: inline-block;
+    width: 188px;
 }
 
 input[type="email"] {
@@ -109,6 +108,14 @@ input[type="submit"],
 input[type="submit"]:hover,
 .fll-signup a:hover {
     background: #C0C0C0;
+}
+
+/* Utility Classes */
+
+.group:after {
+    content:"";
+    display:table;
+    clear:both;
 }
 
 /* Media Queries */
