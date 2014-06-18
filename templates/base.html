@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greater Grand Forks Robotics Club</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" type="text/css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+    <div id="header">
+        <img class="logo" src="{{ url_for('static', filename='img/ggfrc-logo-white.svg') }}" alt="ggfrc logo">
+    </div>
+    {% block content %}
+    
+    {% endblock %}
+    <script src="{{ url_for('static', filename='js/fittext.js') }}"></script>
+    <script type="text/javascript">
+      fitText(document.getElementById('fittext1'), 1.1)
+      // fitText(document.getElementById('fittext2'), 2)
+    </script>
+</body>
+</html>
