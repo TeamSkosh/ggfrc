@@ -79,6 +79,7 @@ label[for="mce-EMAIL"],
 
 input[type="email"],
 input[type="submit"],
+button[type="submit"],
 .fll-signup a {
     border: none;
     border-radius: 10px;
@@ -102,14 +103,70 @@ input[type="email"] {
 }
 
 input[type="submit"],
+button[type="submit"],
 .fll-signup a {
     background: rgba(0,0,0,0);
     border: 4px solid #C0C0C0;
 }
 
 input[type="submit"]:hover,
+button[type="submit"]:hover,
 .fll-signup a:hover {
     background: #C0C0C0;
+}
+
+/* FLL Signup Form */
+
+#fll-signup-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.step-number {
+  background-color: #6A9988;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 7px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+
+#fll-signup-form h2 {
+    margin-top: 0;
+}
+
+#fll-signup-form fieldset,
+#fll-signup-form legend {
+    background: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#fll-signup-form fieldset {
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    clear: left;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+}
+
+.input-group label,
+.input-group input {
+    clear: left;
+    float: left;
 }
 
 /* Utility Classes */
