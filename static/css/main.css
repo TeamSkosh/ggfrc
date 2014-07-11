@@ -52,12 +52,18 @@ h1 sup {
     top: -1rem;
 }
 
+.about,
 .mailing-list,
 .fll-signup {
     box-sizing: border-box;
     float: left;
     padding: 0 25px;
     width: 50%;
+}
+
+.about p {
+    font-size: 1.15rem;
+    line-height: 1.5rem;
 }
 
 hr {
@@ -124,7 +130,7 @@ button[type="submit"]:hover,
 /* FLL Signup Form */
 
 #fll-signup-form {
-    max-width: 500px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -148,7 +154,7 @@ button[type="submit"]:hover,
 
 #fll-signup-form legend {
     color: #6A9988;
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -171,10 +177,15 @@ button[type="submit"]:hover,
 .input-group {
     clear: left;
     float: left;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.input-group:last-child {
+    margin-bottom: 5px;
 }
 
 .input-group label {
+    color: #C0C0C0;
     margin-bottom: 5px;
 }
 
@@ -186,11 +197,19 @@ button[type="submit"]:hover,
     float: left;
 }
 
+.input-group input,
+.input-group textarea {
+    border: 2px solid #C0C0C0;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+}
+
 .input-group .note {
     border: 2px dashed #C0C0C0;
     border-radius: 10px;
     color: #6A9988;
-    font-size: .85rem;
+    font-size: 1rem;
     padding: 8px;
     margin-bottom: 0;
     margin-top: 10px;
@@ -230,6 +249,7 @@ button[type="submit"]:hover,
 /* Media Queries */
 
 @media screen and (max-width: 800px) {
+    .about,
     .mailing-list,
     .fll-signup {
         clear: left;
