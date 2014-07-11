@@ -148,7 +148,7 @@ button[type="submit"]:hover,
 
 #fll-signup-form legend {
     color: #6A9988;
-    font-size: .75rem;
+    font-size: .8rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -180,9 +180,20 @@ button[type="submit"]:hover,
 
 .input-group label,
 .input-group input,
-.input-group textarea {
+.input-group textarea,
+.input-group .note {
     clear: left;
     float: left;
+}
+
+.input-group .note {
+    border: 2px dashed #C0C0C0;
+    border-radius: 10px;
+    color: #6A9988;
+    font-size: .85rem;
+    padding: 8px;
+    margin-bottom: 0;
+    margin-top: 10px;
 }
 
 .repeatable-control {
