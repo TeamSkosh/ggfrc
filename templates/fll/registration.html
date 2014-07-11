@@ -32,6 +32,8 @@
                 <label for="student-email-{{ x }}">Email</label>
 
                 <input id="student-email-{{ x }}" type="text" name="student-email-{{ x }}">
+
+                <p class="note"><strong>Note:</strong> By entering an email you are granting GGFRC permission to send club emails directly to your student. The primary contact will <em>always</em> receive copies of these emails. There are <em>no exceptions</em>.</p>
             </div>
         </fieldset>
     {% endfor %}
@@ -55,7 +57,7 @@
 
     <h2><span class="step-number">2</span>Contact Info</h2>
     <fieldset>
-        <legend>Parent / Guardian</legend>
+        <legend>Parent / Guardian <small>( Primary Contact )</small></legend>
             
         <div class="input-group">
             <label for="parent-fname">First Name</label>
@@ -73,12 +75,16 @@
             <label for="parent-phone">Emergency Phone Number</label>
 
             <input id="parent-phone" type="text" name="parent-phone">
+
+            <p class="note"><strong>Note:</strong> In the event of an emergency we will call this number.</p>
         </div>
 
         <div class="input-group">
             <label for="parent-email">Email</label>
 
             <input id="parent-email" type="text" name="parent-email">
+
+            <p class="note"><strong>Note:</strong> This will be the main point of contact for you.</p>
         </div>
 
         <div class="input-group">
@@ -104,7 +110,7 @@
         </div>
 
         <div class="input-group">
-            <label for="alternate-phone">Phone Number</label>
+            <label for="alternate-phone">Emergency Phone Number</label>
 
             <input id="alternate-phone" type="text" name="alternate-phone">
         </div>
