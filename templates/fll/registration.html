@@ -1,19 +1,20 @@
 {% extends "base.html" %}
 
 {% block greeting %}
-    Welcome to FIRST&reg; LEGO&reg;&nbsp;League.
+    Welcome to FIRST<sup>&reg;</sup> LEGO<sup>&reg;</sup>&nbsp;League.
 {% endblock %}
 
 {% block content %}
 <form id="fll-signup-form" action="/registration" method="post">
     <h2><span class="step-number">1</span>Student Info</h2>
     {% for x in range(5) %}
-        <fieldset>
-            {% if x == 0 %}
-                <legend>Student</legend>
-            {% else %}
-                <legend>Student {{ x+1 }}</legend>
-            {% endif %}
+        {% if x == 0 %}
+            <fieldset id="student-{{ x+1 }}">
+                    <legend>Student</legend>
+        {% else %}
+            <fieldset id="student-{{ x+1 }}" class="hidden sub-form">
+                    <legend>Student {{ x+1 }}</legend>
+        {% endif %}
 
             <div class="input-group">
                 <label for="student-fname-{{ x }}">First Name</label>
@@ -34,9 +35,27 @@
             </div>
         </fieldset>
     {% endfor %}
+    <div class="repeatable-control">
+        <input id="students" type="hidden" name="students" value="1"/>
+        <button 
+            class="add-repeatable-section" 
+            title="Add Student" 
+            data-max="5" 
+            data-counter="#students" 
+            data-section-prefix="student-" 
+            type="button">Add Student</button>
+        <button 
+            class="remove-repeatable-section" 
+            title="Remove Student" 
+            data-min="1" 
+            data-counter="#students" 
+            data-section-prefix="student-" 
+            type="button">Remove Student</button>
+    </div>
+
     <h2><span class="step-number">2</span>Contact Info</h2>
     <fieldset>
-        <legend>Parent/Guardian</legend>
+        <legend>Parent / Guardian</legend>
             
         <div class="input-group">
             <label for="parent-fname">First Name</label>
@@ -49,9 +68,52 @@
 
             <input id="parent-lname" type="text" name="parent-lname">
         </div>
+
+        <div class="input-group">
+            <label for="parent-phone">Emergency Phone Number</label>
+
+            <input id="parent-phone" type="text" name="parent-phone">
+        </div>
+
+        <div class="input-group">
+            <label for="parent-email">Email</label>
+
+            <input id="parent-email" type="text" name="parent-email">
+        </div>
+
+        <div class="input-group">
+            <label for="referral">How did you hear about us?</label>
+
+            <textarea id="referral" type="text" name="referral" rows="8" cols="40"></textarea>
+        </div>
     </fieldset>
+
     <fieldset>
-        <legend>Contact</legend>
+        <legend>Alternate Contact</legend>
+
+        <div class="input-group">
+            <label for="alternate-fname">First Name</label>
+
+            <input id="alternate-fname" type="text" name="alternate-fname">
+        </div>
+
+        <div class="input-group">
+            <label for="alternate-lname">Last Name</label>
+
+            <input id="alternate-lname" type="text" name="alternate-lname">
+        </div>
+
+        <div class="input-group">
+            <label for="alternate-phone">Phone Number</label>
+
+            <input id="alternate-phone" type="text" name="alternate-phone">
+        </div>
+
+        <div class="input-group">
+            <label for="alternate-email">Email</label>
+
+            <input id="alternate-email" type="text" name="alternate-email">
+        </div>
     </fieldset>
     <button type="submit">Onward!</button>
 </form>
