@@ -22,6 +22,8 @@
     {% block content %}
 
     {% endblock %}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     <script src="{{ url_for('static', filename='js/fittext.js') }}"></script>
     <script type="text/javascript">
       fitText(document.getElementById('fittext1'), 1.1)
