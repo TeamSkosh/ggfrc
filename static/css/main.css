@@ -16,6 +16,19 @@ a {
     width: 100%;
 }
 
+#footer {
+    background: #6A9988;
+    box-sizing: border-box;
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+#footer p {
+    color: #fff;
+    text-align: center;
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -34,7 +47,7 @@ a {
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
-    max-width: 700px;
+    max-width: 1000px;
     padding: 25px;
 }
 
@@ -52,32 +65,41 @@ h1 sup {
     top: -1rem;
 }
 
-.about,
-.mailing-list,
-.fll-signup {
+.left-about,
+.fll-about {
     box-sizing: border-box;
     float: left;
     padding: 0 25px;
     width: 50%;
 }
 
-.about p {
+.mailing-list,
+.fll-signup {
+    width: 100%;
+}
+
+.left-about p,
+.fll-about p {
     font-size: 1.15rem;
     line-height: 1.5rem;
+}
+
+.left-about h3 {
+    clear: left;
 }
 
 hr {
     border: 0;
     height: 2px;
     background-color: #6A9988;
-    max-width: 500px;
+    max-width: 700px;
 }
 
 label[for="mce-EMAIL"],
 .fll-signup p {
     color: #6A9988;
     display: block;
-    font-size: 23px;
+    font-size: 22px;
     margin-left: auto;
     margin-right: auto;
     max-width: 500px;
@@ -98,15 +120,17 @@ button[type="submit"],
     box-sizing: border-box;
     display: block;
     font-size: 24px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 35px;
+    margin-top: 30px;
     padding: 10px 20px;
     outline: 0;
 }
 
 .fll-signup a {
     width: 188px;
+}
+
+.fll-signup hr {
+    margin: 35px 0;
 }
 
 input[type="email"] {
@@ -130,8 +154,10 @@ button[type="submit"]:hover,
 /* FLL Signup Form */
 
 #fll-signup-form {
-    max-width: 700px;
+    box-sizing: border-box;
+    padding: 0 25px;
     margin: 0 auto;
+    width: 100%;
 }
 
 #fll-signup-form h2 {
@@ -148,8 +174,10 @@ button[type="submit"]:hover,
 }
 
 #fll-signup-form fieldset {
+    box-sizing: border-box;
     padding: 20px;
     margin-bottom: 25px;
+    width: 100%;
 }
 
 #fll-signup-form legend {
@@ -178,6 +206,7 @@ button[type="submit"]:hover,
     clear: left;
     float: left;
     margin-bottom: 30px;
+    width: 100%;
 }
 
 .input-group:last-child {
@@ -201,18 +230,21 @@ button[type="submit"]:hover,
 .input-group textarea {
     border: 2px solid #C0C0C0;
     border-radius: 5px;
+    box-sizing: border-box;
     outline: none;
     padding: 10px;
+    width: 100%;
 }
 
-.input-group .note {
+.note {
     border: 2px dashed #C0C0C0;
     border-radius: 10px;
+    box-sizing: border-box;
     color: #6A9988;
     font-size: 1rem;
     padding: 8px;
     margin-bottom: 0;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .repeatable-control {
@@ -246,18 +278,43 @@ button[type="submit"]:hover,
     display: none;
 }
 
+.one-fourth label,
+.one-fourth input {
+    max-width: 250px;
+}
+
+.two-fifths label,
+.two-fifths input {
+    max-width: 400px;
+}
+
+.three-fifths label,
+.three-fifths input,
+p.three-fifths {
+    max-width: 600px;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 800px) {
-    .about,
-    .mailing-list,
-    .fll-signup {
+    .left-about,
+    .fll-about,
+    #fll-signup-form {
         clear: left;
-        padding: 0;
+        padding: 0 15px;
         width: 100%;
     }
 
     .fll-signup {
         margin-top: 50px;
+    }
+
+    #greeting h1 {
+        font-size: 2rem;
+    }
+
+    .repeatable-control button {
+        font-size: .75rem;
+        margin-bottom: 20px;
     }
 }
