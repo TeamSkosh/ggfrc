@@ -1,7 +1,12 @@
 from setuptools import setup
 
+with open('.version', 'r') as fh:
+    version = fh.readline()
+    version.strip()
+
 setup(
     name="ggfrc",
+    version=version,
     url="https://github.com/TeamSkosh/ggfrc",
     license="Apache 2.0",
     author="Skosh Interactive L.L.C",

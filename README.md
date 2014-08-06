@@ -15,8 +15,7 @@ $ git clone git@github.com:TeamSkosh/ggfrc.git
 $ python setup.py develop
 
 # Start the server
-$ ggfrc runserver
 ```
 
 
-##Version 0.0.1
+##Version 0.0.2
