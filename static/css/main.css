@@ -153,34 +153,34 @@ button[type="submit"]:hover,
 
 /* FLL Signup Form */
 
-#fll-signup-form {
+form {
     box-sizing: border-box;
     padding: 0 25px;
     margin: 0 auto;
     width: 100%;
 }
 
-#fll-signup-form h2 {
+form h2 {
     clear: both;
     margin-top: 0;
 }
 
-#fll-signup-form fieldset,
-#fll-signup-form legend {
+form fieldset,
+form legend {
     background: #fff;
     border: none;
     border-radius: 8px;
     padding: 10px;
 }
 
-#fll-signup-form fieldset {
+form fieldset {
     box-sizing: border-box;
     padding: 20px;
     margin-bottom: 25px;
     width: 100%;
 }
 
-#fll-signup-form legend {
+form legend {
     color: #6A9988;
     font-size: 1rem;
     font-weight: bold;
@@ -266,6 +266,10 @@ button[type="submit"]:hover,
     background: #C0C0C0;
 }
 
+#mc-embedded-subscribe-form {
+    padding: 0;
+}
+
 /* Utility Classes */
 
 .group:after {
@@ -299,7 +303,7 @@ p.three-fifths {
 @media screen and (max-width: 800px) {
     .left-about,
     .fll-about,
-    #fll-signup-form {
+    form {
         clear: left;
         padding: 0 15px;
         width: 100%;
