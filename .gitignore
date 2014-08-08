@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 *.egg-info*
+=======
+ggfrc/config.py
+>>>>>>> fll-signup
