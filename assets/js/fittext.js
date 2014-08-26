@@ -1,8 +1,8 @@
-/*! 
+/*!
 * FitText.js 1.0 jQuery free version
 *
-* Copyright 2011, Dave Rupert http://daverupert.com 
-* Released under the WTFPL license 
+* Copyright 2011, Dave Rupert http://daverupert.com
+* Released under the WTFPL license
 * http://sam.zoy.org/wtfpl/
 * Modified by Slawomir Kolodziej http://slawekk.info
 *
@@ -12,14 +12,14 @@
   var css = function (el, prop) {
     return window.getComputedStyle ? getComputedStyle(el).getPropertyValue(prop) : el.currentStyle[prop];
   };
-  
+
   var addEvent = function (el, type, fn) {
     if (el.addEventListener)
       el.addEventListener(type, fn, false);
         else
             el.attachEvent('on'+type, fn);
   };
-  
+
   var extend = function(obj,ext){
     for(key in ext)
       if(ext.hasOwnProperty(key))

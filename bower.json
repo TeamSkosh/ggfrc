@@ -3,17 +3,16 @@
   "version": "0.0.2",
   "homepage": "https://github.com/TeamSkosh/ggfrc",
   "authors": [
-    "Nick Zaccardi <nicholas.zaccardi@gmail.com>",
-    "Rand Seay <rand.seay@gmail.com>"
+    "Nick Zaccardi <nick@skoshinteractive.com>",
+    "Rand Seay <rand@skoshinteractive.com>"
   ],
   "description": "The Greater Grand Forks Robotics Club web App",
   "keywords": [
-    "Grand Forks",
-    "Robotics",
-    "Club",
-    "First",
-    "Lego",
-    "League"
+    "grand forks",
+    "greater grand forks"
+    "robotics",
+    "robotics club",
+    "first lego league"
   ],
   "license": "MIT",
   "private": true,
@@ -25,6 +24,9 @@
     "tests"
   ],
   "dependencies": {
-    "foundation": "~5.4.0"
+    "foundation": "~5.4.0",
+    "jquery": "~2.1.1",
+    "fastclick": "~1.0.3",
+    "modernizr": "~2.8.3"
   }
 }
