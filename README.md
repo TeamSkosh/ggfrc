@@ -14,7 +14,7 @@ $ git clone git@github.com:TeamSkosh/ggfrc.git
 # Install the dependencies
 $ python setup.py develop
 
-# Install bower us npm
+# Install bower using npm
 $ npm install -g bower
 
 # Install dependencies via Bower
