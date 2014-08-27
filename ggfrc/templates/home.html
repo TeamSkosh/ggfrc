@@ -1,34 +1,58 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Greater Grand Forks Robotics Club</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}" type="text/css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.min.css') }}" type="text/css" media="screen" title="no title" charset="utf-8">
-</head>
-<body>
-    <div id="header">
-        <img class="logo" src="{{ url_for('static', filename='img/ggfrc-logo-white.svg') }}" alt="ggfrc logo">
-    </div>
-    <div id="greeting">
-        <h1 id="fittext1">We're&nbsp;glad&nbsp;you're&nbsp;here.</h1>
-    </div>
-    <div class="container mailing-list">
-        <hr>
-        <div id="mc_embed_signup" class="container">
-            <form action="http://ggfrc.us8.list-manage.com/subscribe/post?u=667f8798d4954ac7106d77b28&amp;id=b39fbd60bc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <label id="fittext2" for="mce-EMAIL">Would you like to subscribe to our mailing list?</label>
-                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+{% extends "base.html" %}
 
-                <div style="position: absolute; left: -5000px;"><input type="text" name="b_667f8798d4954ac7106d77b28_b39fbd60bc" tabindex="-1" value=""></div>
+{% block greeting %}
+    We're glad you're here.
+{% endblock %}
 
-                <div><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-            </form>
+{% block content %}
+    <div class="container group">
+        <div class="left-about">
+            <h2>About GGFRC</h2>
+
+            <p>GGFRC (Greater Grand Forks Robotics Club) is an introductory hands-on robotics club.  We plan to have bi-monthly meetings during the school year in which students will be exposed to and learn skills in regards to the LEGO<sup>&reg;</sup> NXT robotics kit.  In this club students can attend any meetings they please, and it will not require a commitment by the student.  Attendance is optional, and there are no assignments.  The GGFRC is a program in which students of all ages can come and learn about robotics and critical thinking in a positive and friendly environment. GGFRC has no age requirements.
+
+            <p class="note"><strong>Note:</strong> If you are bringing students younger than 2nd grade, you are required to stay with your student during the club meeting.</p>
+
+            <h3>Who We Are</h3>
+
+            <p>We are a non-profit, volunteer-led organization whose mission is to introduce students of all ages to robotics, creative processes, and critical thinking skills to help them get excited and passionate about <abbr title="Science, Technology, Engineering, and Math">S.T.E.M.</abbr> (Science, Technology, Engineering, and Math).</p>
+
+            <p>We strive to offer these programs at no cost to the student.  We work diligently to find support in the forms of competent and responsible coaches, financial support, and offerings of adequate places for FIRST<sup>&reg;</sup> LEGO<sup>&reg;</sup> League teams to meet.</p>
+
+            <div class="mailing-list">
+                <div id="mc_embed_signup">
+                    <form action="http://ggfrc.us8.list-manage.com/subscribe/post?u=667f8798d4954ac7106d77b28&amp;id=b39fbd60bc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <label id="fittext2" for="mce-EMAIL">Would you like to subscribe to our mailing list?</label>
+                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+
+                        <div style="position: absolute; left: -5000px;"><input type="text" name="b_667f8798d4954ac7106d77b28_b39fbd60bc" tabindex="-1" value=""></div>
+
+                        <div>
+                            <input type="submit" value="Subscribe →" name="subscribe" id="mc-embedded-subscribe" class="button">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="fll-about">
+            <h2>FIRST<sup>&reg;</sup> LEGO<sup>&reg;</sup> League</h2>
+
+            <p>FLL (FIRST<sup>&reg;</sup> LEGO<sup>&reg;</sup> League) is a structured competition program that runs from the beginning of October to early February.  It will require a significant commitment from the student to meet with their group and complete assignments every week.  FLL is a program in which a student learns robotics, researching, presentation, teamwork and other important skills, both S.T.E.M. and life related.</p>
+
+            <div class="fll-signup">
+                <hr>
+                <p>Are you interested in signing up for FIRST<sup>&reg;</sup> LEGO<sup>&reg;</sup> League?</p>
+                <div>
+                    <a href="{{ url_for('fll_registration') }}">Absolutely →</a>
+                </div>
+                <hr>
+            </div>
+
+            <p>FFL requires that the student be at least 9 years old by the dates of the regional competition (approximately February 1st, 2014) but not older than 14 years old at the start of our build season (October 1st, 2013) .  i.e. - Age Requirement: 9 - 14
+            While we would love to have every age-appropriate student participate in FLL, we are limited by funding, coaches, and meeting space.  This year we are offering 4 teams with a tentative maximum of 7 students per team (28 students total).</p>
+
+            <p>Unfortunately this means that if you are signing up for FLL,  it does not guarantee your student's placement on a team.  However, your student is still welcome to participate in the club meetings.</p>
         </div>
     </div>
-    <script type="text/javascript">
-      fitText(document.getElementById('fittext1'), 1.1)
-      // fitText(document.getElementById('fittext2'), 2)
-    </script>
-</body>
-</html>
+{% endblock %}

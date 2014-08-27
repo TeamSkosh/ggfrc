@@ -19,6 +19,7 @@ module.exports = function(grunt) {
           style: "compressed"
         },
         files: {
+          "ggfrc/static/css/foundation.min.custom.css": "assets/scss/foundation-custom.scss",
           "ggfrc/static/css/global.min.css": "assets/scss/global.scss"
         }
       }
@@ -80,9 +81,22 @@ module.exports = function(grunt) {
 
     copy: {
       favicon: {
-        files: [
-          {expand: true, src: ["assets/img/*.ico"], dest: "ggfrc/static/img/", flatten: true, filter: "isFile"}
-        ]
+        files: [{
+            expand: true,
+            src: ["assets/img/*.ico"],
+            dest: "ggfrc/static/img/",
+            flatten: true,
+            filter: "isFile"
+        }]
+      },
+      foundation_js: {
+        files: [{
+          expand: true,
+          src: ["bower_components/foundation/js/foundation.min.js", "bower_components/foundation/js/vendor/fastclick.js"],
+          dest: "ggfrc/static/js/",
+          flatten: true,
+          filter: "isFile"
+        }]
       }
     },
 
@@ -100,6 +114,8 @@ module.exports = function(grunt) {
 
   grunt.registerTask("styles", ["sass", "autoprefixer"]);
 
+  grunt.registerTask("js", ["uglify", "newer:copy:foundation_js"]);
+
   grunt.registerTask("images", [
     "newer:svgstore",
     "newer:imagemin:png",
@@ -112,8 +128,9 @@ module.exports = function(grunt) {
     "uglify",
     "newer:svgstore",
     "newer:imagemin:png",
-    "newer:copy:favicon"
-    ])
+    "newer:copy:favicon",
+    "newer:copy:foundation_js"
+  ]);
 
   grunt.registerTask("default", [
     "sass",
