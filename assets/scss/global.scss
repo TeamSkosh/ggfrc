@@ -3,6 +3,14 @@ body {
     color: #545454;
 }
 
+#svg-defs {
+    display: none;
+}
+
+.main-logo {
+    display: inline-block;
+}
+
 #header {
     background: #6A9988;
     border-bottom: 5px solid #545454;

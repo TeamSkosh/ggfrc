@@ -19,8 +19,15 @@ module.exports = function(grunt) {
           style: "compressed"
         },
         files: {
-          "ggfrc/static/css/foundation.min.custom.css": "assets/scss/foundation-custom.scss",
           "ggfrc/static/css/global.min.css": "assets/scss/global.scss"
+        }
+      },
+      foundation: {
+        options: {
+          style: "compressed"
+        },
+        files: {
+          "ggfrc/static/css/foundation.min.custom.css": "assets/scss/foundation-custom.scss"
         }
       }
     },
@@ -35,9 +42,13 @@ module.exports = function(grunt) {
       options: {
         livereload: true
       },
-      css: {
-        files: ["assets/scss/*.scss"],
-        tasks: ["sass", "autoprefixer"]
+      global_styles: {
+        files: ["assets/scss/global.scss"],
+        tasks: ["sass:global", "autoprefixer"]
+      },
+      foundation_styles: {
+        files: ["assets/scss/_foundation-settings.scss", "foundation-custom.scss"],
+        tasks: ["sass:foundation"]
       },
       js: {
         files: ["assets/js/*.js"],
@@ -45,7 +56,7 @@ module.exports = function(grunt) {
       },
       svg: {
         files: ["assets/svg/*.svg"],
-        tasks: ["svgstore"]
+        tasks: ["newer:svgstore"]
       },
       img: {
         files: ["assets/img/*.png"],
@@ -57,6 +68,10 @@ module.exports = function(grunt) {
       options: {
         prefix : "shape-",
         cleanup: false,
+        symbol: {
+          preserveAspectRatio: "xMidyMid meet",
+          width: "100%"
+        },
         svg: {
           style: "display: none;"
         }
@@ -112,9 +127,9 @@ module.exports = function(grunt) {
 
   grunt.registerTask("serve", ["shell:flaskServe"]);
 
-  grunt.registerTask("styles", ["sass", "autoprefixer"]);
+  grunt.registerTask("styles", ["newer:sass:global", "newer:sass:foundation", "newer:autoprefixer"]);
 
-  grunt.registerTask("js", ["uglify", "newer:copy:foundation_js"]);
+  grunt.registerTask("js", ["newer:uglify", "newer:copy:foundation_js"]);
 
   grunt.registerTask("images", [
     "newer:svgstore",
@@ -123,8 +138,9 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask("build", [
-    "sass",
-    "autoprefixer",
+    "sass:global",
+    "sass:foundation",
+    "newer:autoprefixer",
     "uglify",
     "newer:svgstore",
     "newer:imagemin:png",
@@ -133,7 +149,8 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask("default", [
-    "sass",
+    "sass:global",
+    "sass:foundation",
     "autoprefixer",
     "uglify",
     "newer:svgstore",

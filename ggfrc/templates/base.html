@@ -8,9 +8,16 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/global.min.css') }}" type="text/css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
-    <div id="header">
-        <a class="logo" href="{{ url_for('home') }}"><img class="logo" src="{{ url_for('static', filename='img/ggfrc-logo-white.svg') }}" alt="ggfrc logo"></a>
+    <div id="svg-defs"></div>
+
+    <!-- Top Bar -->
+    <div class="contain-to-grid fixed">
+        <nav class="top-bar">
+            <a class="main-logo" href="#"><svg><use xlink:href="#shape-ggfrc-logo-white" /></svg></a>
+            <p class="right hide-for-small">A Treehouse Project</p>
+        </nav>
     </div>
+
     <div id="greeting">
         <h1>
             {% block greeting %}
@@ -26,9 +33,12 @@
         <p>&copy; 2014. Greater Grand Forks Robotics Club</p>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/fastclick.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/foundation.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/global.min.js') }}"></script>
     <script type="text/javascript">
-      fitText(document.getElementById('fittext1'), 1.1)
+        $(document).foundation();
+        $("#svg-defs").load("{{ url_for('static', filename='svg/svg-defs.svg') }}");
     </script>
 </body>
 </html>
