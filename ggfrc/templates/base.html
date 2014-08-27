@@ -11,12 +11,23 @@
     <div id="svg-defs"></div>
 
     <!-- Top Bar -->
-    <div class="contain-to-grid fixed">
-        <nav class="top-bar">
-            <a class="main-logo" href="#"><svg><use xlink:href="#shape-ggfrc-logo-white" /></svg></a>
-            <p class="right hide-for-small">A Treehouse Project</p>
-        </nav>
-    </div>
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <a href="#"><svg><use xlink:href="#shape-ggfrc-logo-white" /></svg></a>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+      </ul>
+
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li><a href="#">League</a></li>
+          <li><a href="#">Club</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </section>
+    </nav>
 
     <div id="greeting">
         <h1>
