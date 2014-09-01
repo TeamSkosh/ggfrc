@@ -1,4 +1,5 @@
 *.egg-info*
+*.egg*
 ggfrc/config.py
 bower_components/
 *.sass-cache
