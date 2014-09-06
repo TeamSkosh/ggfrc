@@ -7,8 +7,29 @@ body {
     display: none;
 }
 
+.top-bar {
+    max-width: 960px;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+}
+
 .main-logo {
-    display: inline-block;
+    float: left;
+    height: 45px;
+    padding-top: 7px;
+
+    svg {
+        float: left;
+        max-height: 45px;
+        max-width: 45px;
+    }
+
+    p {
+        margin-left: 55px;
+        margin-top: 7px;
+        font-size: 1.3rem;
+        color: white;
+    }
 }
 
 #header {
