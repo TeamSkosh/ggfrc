@@ -22,7 +22,28 @@ $ bower install
 
 # Start the server
 $ ggfrc runserver
+
+# Build the assets
+grunt build
 ```
 
+##Configured Grunt Tasks
+
+```
+# Compiles new styles (global and foundation), auto-prefixes, minifies
+grunt styles
+
+# Uglifies js and copies foundation's js into the static directory (if needed)
+grunt js
+
+# Creates svg sprite, minifies pngs, copies favicon into static dir (if needed)
+grunt images
+
+# Handles styles, js, and images
+grunt build
+
+# Compiles sass, uglifies js, handles svgs and images, watches for changes
+grunt
+```
 
 ##Version 0.0.2
