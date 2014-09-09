@@ -5,9 +5,14 @@
     <script src="{{ url_for('static', filename='js/fastclick.js') }}"></script>
     <script src="{{ url_for('static', filename='js/foundation.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/global.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/persona.js') }}"></script>
     <script type="text/javascript">
+        <!-- Load Foundation -->
         $(document).foundation();
-        $("#svg-defs").load("{{ url_for('static', filename='svg-defs.svg') }}");
+
+        <!-- Load SVG -->
+        $("#svg-defs").load("{{ url_for('static', filename='svg/svg-defs.svg') }}");
+
     </script>
 </body>
 </html>

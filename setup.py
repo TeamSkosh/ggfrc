@@ -1,12 +1,8 @@
 from setuptools import setup
 
-with open('.version', 'r') as fh:
-    version = fh.readline()
-    version.strip()
-
 setup(
     name="ggfrc",
-    version=version,
+    version="0.0.2",
     url="https://github.com/TeamSkosh/ggfrc",
     license="Apache 2.0",
     author="Skosh Interactive L.L.C",
@@ -22,6 +18,8 @@ setup(
     install_requires=[
         'flask==0.10.1',
         'flask-script==0.6.7',
+        'flask-ini==0.2.1',
+        'requests',
     ],
     entry_points={
         'console_scripts': [
