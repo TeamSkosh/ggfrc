@@ -16,6 +16,9 @@ setup(
         'ggfrc',
         'ggfrc.scripts',
     ],
+    setup_requires=[
+        "nose>=1.0",
+    ],
     install_requires=[
         'flask==0.10.1',
         'flask-script==0.6.7',
@@ -24,5 +27,5 @@ setup(
         'console_scripts': [
             'ggfrc=ggfrc.scripts.application:command'
         ]
-    }
+    },
 )

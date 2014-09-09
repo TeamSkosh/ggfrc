@@ -26,6 +26,9 @@ $ bower install
 # Build the assets
 $ grunt build
 
+# Install dependencies via Bower
+$ bower install
+
 # Start the server
 $ ggfrc runserver
 ```

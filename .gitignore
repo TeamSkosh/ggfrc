@@ -1,9 +1,7 @@
 *.egg-info*
-ggfrc/config.py
-ggfrc/static/css/*.css
-ggfrc/static/img/*.png
-ggfrc/static/img/*.ico
-ggfrc/static/js/*.js
-ggfrc/static/svg/*.svg
 bower_components/
 node_modules/
+*.egg*
+ggfrc/config.py
+bower_components/
+*.sass-cache
