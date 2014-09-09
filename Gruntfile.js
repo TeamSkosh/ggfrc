@@ -14,9 +14,12 @@ module.exports = function(grunt) {
     },
 
     sass: {
+      options: {
+        includePaths: ["bower_components/foundation/scss"]
+      },
       global: {
         options: {
-          style: "compressed"
+          outputStyle: "compressed"
         },
         files: {
           "ggfrc/static/css/global.min.css": "assets/scss/global.scss"
@@ -24,7 +27,7 @@ module.exports = function(grunt) {
       },
       foundation: {
         options: {
-          style: "compressed"
+          outputStyle: "compressed"
         },
         files: {
           "ggfrc/static/css/foundation.min.custom.css": "assets/scss/foundation-custom.scss"

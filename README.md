@@ -17,14 +17,17 @@ $ python setup.py develop
 # Install bower using npm
 $ npm install -g bower
 
+# Install local npm pacakages
+$ npm install
+
 # Install dependencies via Bower
 $ bower install
 
+# Build the assets
+$ grunt build
+
 # Start the server
 $ ggfrc runserver
-
-# Build the assets
-grunt build
 ```
 
 ##Configured Grunt Tasks
