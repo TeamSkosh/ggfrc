@@ -1,5 +1,7 @@
 #GGFRC
 
+[![Build Status](https://travis-ci.org/TeamSkosh/ggfrc.svg?branch=develop)](https://travis-ci.org/TeamSkosh/ggfrc)
+
 An application to manage robotics clubs.
 
 ##Installation Instructions
