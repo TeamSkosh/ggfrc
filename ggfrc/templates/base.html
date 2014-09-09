@@ -1,25 +1,8 @@
 {% include "includes/header.html.j2" %}
 
+<div id="svg-defs"></div>
 
+{% include "includes/topnav.html.j2" %}
 
-<body>
-    <div id="svg-defs"></div>
-
-    {% include "includes/topnav.html.j2" %}
-
-    {% block content %}
-
-    {% endblock %}
-    <div id="footer" class="group">
-        <p>&copy; 2014. Greater Grand Forks Robotics Club</p>
-    </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="{{ url_for('static', filename='js/fastclick.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/foundation.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/global.min.js') }}"></script>
-    <script type="text/javascript">
-        $(document).foundation();
-        $("#svg-defs").load("{{ url_for('static', filename='svg/svg-defs.svg') }}");
-    </script>
-</body>
-</html>
+{% block content %}
+{% endblock %}
