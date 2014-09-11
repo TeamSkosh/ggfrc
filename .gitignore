@@ -3,5 +3,4 @@ bower_components/
 node_modules/
 *.egg*
 ggfrc/config.py
-bower_components/
 *.sass-cache
