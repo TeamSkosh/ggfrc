@@ -5,3 +5,5 @@ node_modules/
 ggfrc/config.py
 bower_components/
 *.sass-cache
+local.config
+
