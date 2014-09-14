@@ -8,7 +8,7 @@ module.exports = function(grunt) {
     uglify: {
       global: {
         files: {
-          "ggfrc/static/js/global.min.js": ["assets/js/*.js"]
+          "ggfrc/static/js/global.min.js": ["ggfrc/static/js/global.js"]
         }
       }
     },
@@ -22,7 +22,7 @@ module.exports = function(grunt) {
           outputStyle: "compressed"
         },
         files: {
-          "ggfrc/static/css/global.min.css": "assets/scss/global.scss"
+          "ggfrc/static/css/global.min.css": "ggfrc/static/scss/global.scss"
         }
       },
       foundation: {
@@ -30,7 +30,7 @@ module.exports = function(grunt) {
           outputStyle: "compressed"
         },
         files: {
-          "ggfrc/static/css/foundation.min.custom.css": "assets/scss/foundation-custom.scss"
+          "ggfrc/static/css/foundation.min.custom.css": "ggfrc/static/scss/foundation-custom.scss"
         }
       }
     },
@@ -46,24 +46,24 @@ module.exports = function(grunt) {
         livereload: true
       },
       global_styles: {
-        files: ["assets/scss/global.scss"],
+        files: ["ggfrc/static/scss/global.scss"],
         tasks: ["sass:global", "autoprefixer"]
       },
       foundation_styles: {
-        files: ["assets/scss/_foundation-settings.scss", "foundation-custom.scss"],
+        files: ["ggfrc/static/scss/_foundation-settings.scss", "ggfrc/static/foundation-custom.scss"],
         tasks: ["sass:foundation"]
       },
       js: {
-        files: ["assets/js/*.js"],
+        files: ["ggfrc/static/js/*.js"],
         tasks: ["uglify"]
       },
       svg: {
-        files: ["assets/svg/*.svg"],
+        files: ["ggfrc/static/svg/*.svg"],
         tasks: ["newer:svgstore"]
       },
       img: {
-        files: ["assets/img/*.png"],
-        tasks: ["newer:imagemin:png", "newer:favicon"]
+        files: ["ggfrc/static/img/*.png"],
+        tasks: ["newer:imagemin:png"]
       }
     },
 
@@ -72,7 +72,6 @@ module.exports = function(grunt) {
         prefix : "shape-",
         cleanup: false,
         symbol: {
-          preserveAspectRatio: "xMidyMid meet",
           width: "100%"
         },
         svg: {
@@ -81,7 +80,7 @@ module.exports = function(grunt) {
       },
       default: {
         files: {
-          "ggfrc/static/svg/svg-defs.svg": ["assets/svg/*.svg"]
+          "ggfrc/static/svg-defs.svg": ["ggfrc/static/svg/*.svg"]
         }
       }
     },
@@ -90,23 +89,15 @@ module.exports = function(grunt) {
       png: {
         files: [{
           expand: true,
-          cwd: 'assets/img/',
-          src: ['*.png'],
-          dest: 'ggfrc/static/img/'
+          cwd: "ggfrc/static/img/",
+          src: ["*.png"],
+          dest: "ggfrc/static/img/",
+          ext: ".min.png"
         }]
       }
     },
 
     copy: {
-      favicon: {
-        files: [{
-            expand: true,
-            src: ["assets/img/*.ico"],
-            dest: "ggfrc/static/img/",
-            flatten: true,
-            filter: "isFile"
-        }]
-      },
       foundation_js: {
         files: [{
           expand: true,
@@ -116,19 +107,11 @@ module.exports = function(grunt) {
           filter: "isFile"
         }]
       }
-    },
-
-    shell: {
-      flaskServe: {
-        command: 'ggfrc runserver'
-      }
     }
 
   });
 
   require("load-grunt-tasks")(grunt);
-
-  grunt.registerTask("serve", ["shell:flaskServe"]);
 
   grunt.registerTask("styles", ["newer:sass:global", "newer:sass:foundation", "newer:autoprefixer"]);
 
@@ -136,8 +119,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask("images", [
     "newer:svgstore",
-    "newer:imagemin:png",
-    "newer:copy:favicon"
+    "newer:imagemin:png"
   ]);
 
   grunt.registerTask("build", [
@@ -147,7 +129,6 @@ module.exports = function(grunt) {
     "uglify",
     "newer:svgstore",
     "newer:imagemin:png",
-    "newer:copy:favicon",
     "newer:copy:foundation_js"
   ]);
 
@@ -158,7 +139,6 @@ module.exports = function(grunt) {
     "uglify",
     "newer:svgstore",
     "newer:imagemin:png",
-    "newer:copy:favicon",
     "watch"
   ]);
 
