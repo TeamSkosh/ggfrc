@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="{{ iniconfig.get('persona','PERSONA_JS') }}"></script>
+
+    <script>
+        var $URL_ROOT = {{ request.url_root|tojson }};
+
+        var $CURRENT_USER = {{ g.user|tojson }};
+    </script>
 
     {% if page_title is defined %}
         {% set page_title = page_title + " | " %}
@@ -9,8 +19,6 @@
     {% endif %}
 
     <title>{{ page_title }}Greater Grand Forks Robotics Club</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
 
     <link
         rel="stylesheet"
