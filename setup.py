@@ -19,6 +19,7 @@ setup(
         'flask==0.10.1',
         'flask-script==0.6.7',
         'flask-ini==0.2.1',
+        'flask-sqlalchemy',
         'requests',
     ],
     entry_points={

@@ -1,5 +1,7 @@
 from flask.ext.script import Manager
-from ggfrc import app
+from ggfrc import create_app
+
+app = create_app()
 
 manager = Manager(app)
 
