@@ -2,9 +2,29 @@
 
 
 {% block content %}
+    <!-- Hero -->
+    <div class="hero">
+        <div class="row">
+            <div class="large-6 columns">
+                <h1>We're glad you're here, and so are the robots.</h1>
+                <p class="lead">Get a hands-on introduction to robotics by signing up for The Greater Grand Forks Robotics Club.</p>
+                <p class="lead">Or take it a step further by jumping into the structured competition, FIRST<sup>&reg;</sup> Lego<sup>&reg;</sup> League.</p>
+                <p class="lead">Either way, we think you'll enjoy yourself.</p>
+                <p class="lead">
+                    <a class="btn" href="#">Club ➜</a>
+                    <a class="btn" href="#">FIRST<sup>&reg;</sup> Lego<sup>&reg;</sup> League ➜</a>
+                </p>
+            </div>
+        <div class="large-6 hide-for-small columns">
+            <div class="device right"></div>
+        </div>
+      </div>
+    </div><!-- End Hero -->
     <div class="container group">
         <div class="left-about">
             <h2>About GGFRC</h2>
+
+            <hr>
 
             <p>GGFRC (Greater Grand Forks Robotics Club) is an introductory hands-on robotics club.  We plan to have bi-monthly meetings during the school year in which students will be exposed to and learn skills in regards to the LEGO<sup>&reg;</sup> NXT robotics kit.  In this club students can attend any meetings they please, and it will not require a commitment by the student.  Attendance is optional, and there are no assignments.  The GGFRC is a program in which students of all ages can come and learn about robotics and critical thinking in a positive and friendly environment. GGFRC has no age requirements.
 
@@ -36,15 +56,6 @@
             <h2>FIRST<sup>&reg;</sup> LEGO<sup>&reg;</sup> League</h2>
 
             <p>FLL (FIRST<sup>&reg;</sup> LEGO<sup>&reg;</sup> League) is a structured competition program that runs from the beginning of October to early February.  It will require a significant commitment from the student to meet with their group and complete assignments every week.  FLL is a program in which a student learns robotics, researching, presentation, teamwork and other important skills, both S.T.E.M. and life related.</p>
-
-            <div class="fll-signup">
-                <hr>
-                <p>Are you interested in signing up for FIRST<sup>&reg;</sup> LEGO<sup>&reg;</sup> League?</p>
-                <div>
-                    <a href="{{ url_for('fll_registration') }}">Absolutely →</a>
-                </div>
-                <hr>
-            </div>
 
             <p>FFL requires that the student be at least 9 years old by the dates of the regional competition (approximately February 1st, 2014) but not older than 14 years old at the start of our build season (October 1st, 2013) .  i.e. - Age Requirement: 9 - 14
             While we would love to have every age-appropriate student participate in FLL, we are limited by funding, coaches, and meeting space.  This year we are offering 4 teams with a tentative maximum of 7 students per team (28 students total).</p>
