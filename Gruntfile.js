@@ -80,7 +80,7 @@ module.exports = function(grunt) {
       },
       default: {
         files: {
-          "ggfrc/static/svg-defs.svg": ["ggfrc/static/svg/*.svg"]
+          "ggfrc/static/svg/svg-defs.svg": ["ggfrc/static/svg/shapes/*.svg"]
         }
       }
     },
