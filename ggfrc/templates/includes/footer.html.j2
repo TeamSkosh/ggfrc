@@ -1,5 +1,25 @@
-    <div id="footer" class="group">
-        <p>&copy; 2014. Greater Grand Forks Robotics Club</p>
+    <div id="footer">
+        <div class="row">
+            <div class="medium-4 columns">
+                <h5>Stay up to date with GGFRC</h5>
+                <p>Sign up for our newsletter</p>
+            </div>
+            <div class="medium-4 columns">
+                <form method="post" action="#">
+                    <div class="row collapse margintop-20px">
+                        <div class="small-8 columns">
+                            <input type="text" name="email" placeholder="email@example.com">
+                        </div>
+                        <div class="small-4 columns">
+                            <input type="submit" href="#" class="postfix small button expand" value="Sign Up">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="copyright" class="medium-4 columns copyright">
+                <p>&copy; 2014. Greater Grand Forks Robotics Club</p>
+            </div>
+        </div>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="{{ url_for('static', filename='js/fastclick.js') }}"></script>
