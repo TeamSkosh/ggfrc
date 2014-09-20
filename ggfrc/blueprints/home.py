@@ -3,8 +3,7 @@ import requests
 
 bp = Blueprint('home', __name__, url_prefix='')
 
-
-@bp.context_processor
+@bp.app_context_processor
 def inject_ini_config():
     return dict(iniconfig=current_app.iniconfig)
 

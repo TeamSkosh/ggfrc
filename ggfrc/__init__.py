@@ -18,8 +18,10 @@ def create_app(config=None):
 
     from ggfrc.blueprints.auth import bp as auth
     from ggfrc.blueprints.home import bp as home
+    from ggfrc.blueprints.fll import bp as fll
     app.register_blueprint(auth)
     app.register_blueprint(home)
+    app.register_blueprint(fll)
 
     return app
 
