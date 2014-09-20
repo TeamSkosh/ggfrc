@@ -89,15 +89,14 @@ hr {
     background-color: #ddd;
     padding-top: 20px;
 
-    h5 {
-        font-weight: bold;
-        margin-bottom: -5px;
-    }
-
     #copyright {
         p {
-            text-align: center;
+            text-align: right;
             font-size: .75rem;
+
+            @media screen and (max-width: 64em) {
+                text-align: center;
+            }
         }
     }
 }
