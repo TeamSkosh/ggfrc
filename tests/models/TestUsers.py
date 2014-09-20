@@ -10,7 +10,7 @@ class UserModelTestCase(GGFRCTestCase):
     def test_get_user_by_email(self):
         test_user = models.User.testing_create()
 
-        user = models.User.get_user(test_user.email)
+        user = models.User.get_user_by_email(test_user.email)
 
         assert user is test_user
 
