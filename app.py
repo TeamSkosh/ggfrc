@@ -7,9 +7,6 @@ app.config['DEBUG'] = True
 def home():
     return render_template("home.html")
 
-@app.route("/fll/registration")
-def fll_registration():
-    return render_template("fll/registration.html")
 
 if __name__ == '__main__':
     app.run()
