@@ -1,0 +1,1 @@
+from ggfrc import app
