@@ -109,12 +109,51 @@ hr {
     max-width: 1000px;
 }
 
+.note {
+    border: 2px dashed #C0C0C0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #6A9988;
+    font-size: 1rem;
+    padding: 8px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
 sup {
     font-size: 50%;
     top: -7px;
 }
 
 /* Forms */
+
+.step-number {
+    margin-top: 40px;
+}
+
+fieldset legend {
+    border: 1px solid #d8d8d8;
+    border-bottom: none;
+    padding: 10px 15px 0;
+}
+
+.step-number {
+  background-color: #6A9988;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 7px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
 
 // label[for="mce-EMAIL"] {
 //     color: #6A9988;
@@ -139,18 +178,4 @@ sup {
 //     margin-top: 35px;
 //     padding: 10px 20px;
 //     outline: 0;
-// }
-
-// input[type="email"] {
-//     max-width: 500px;
-//     width: 100%;
-// }
-
-// input[type="submit"] {
-//     background: rgba(0,0,0,0);
-//     border: 4px solid #C0C0C0;
-// }
-
-// input[type="submit"]:hover {
-//     background: #C0C0C0;
 // }
