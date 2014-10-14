@@ -38,7 +38,7 @@ body {
     background-position:  100% 25%;
     background-image: url("../img/ggfrc-bg.min.png");
     background-color: #333;
-    padding: 200px 0 140px 0;
+    padding: 150px 0 100px 0;
     margin-bottom: 70px;
     margin-top: -60px;
 
@@ -86,11 +86,12 @@ hr {
     background-repeat: no-repeat;
     background-position:  0% 10%;
     background-image: url("../img/ggfrc-bg.min.png");
-    background-color: #ddd;
+    background-color: #333;
     padding-top: 20px;
 
     #copyright {
         p {
+            color: white;
             text-align: right;
             font-size: .75rem;
 
@@ -109,12 +110,54 @@ hr {
     max-width: 1000px;
 }
 
+.note {
+    border: 2px dashed #C0C0C0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #6A9988;
+    font-size: 1rem;
+    padding: 8px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
 sup {
     font-size: 50%;
     top: -7px;
 }
 
 /* Forms */
+
+form .panel:nth-child(1) {
+    margin-top: 35px;
+}
+
+fieldset legend {
+    padding: 0 15px;
+}
+
+.step-number {
+  background-color: #6A9988;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 7px;
+  margin-top: 40px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+
+  &.alpha {
+    margin-top: 0;
+  }
+}
 
 // label[for="mce-EMAIL"] {
 //     color: #6A9988;
@@ -139,18 +182,4 @@ sup {
 //     margin-top: 35px;
 //     padding: 10px 20px;
 //     outline: 0;
-// }
-
-// input[type="email"] {
-//     max-width: 500px;
-//     width: 100%;
-// }
-
-// input[type="submit"] {
-//     background: rgba(0,0,0,0);
-//     border: 4px solid #C0C0C0;
-// }
-
-// input[type="submit"]:hover {
-//     background: #C0C0C0;
 // }
