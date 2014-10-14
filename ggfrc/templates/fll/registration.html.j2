@@ -4,157 +4,159 @@
 {% block content %}
 <div class="container">
     <form action="/fll/registration" id="fll-signup-form" method="post">
-        <div class="row">
-            <div class="large-12 columns">
-                <h3><span class="step-number">1</span>Student Info</h3>
+        <div class="panel">
+            <div class="row">
+                <div class="large-12 columns">
+                    <h3><span class="alpha step-number">1</span>Student Info</h3>
+                </div><!-- End Row -->
+            </div>
+            <div class="row">
+                <div class="large-12 columns">
+                    {% for x in range(5) %}
+                        {% if x == 0 %}
+                            <fieldset id="student-{{ x+1 }}" class="panel">
+                                    <legend>Student</legend>
+                        {% else %}
+                            <fieldset id="student-{{ x+1 }}" class="hidden panel">
+                                    <legend>Student {{ x+1 }}</legend>
+                        {% endif %}
+
+                            <div class="row">
+                                <div class="medium-4 columns">
+                                    <label for="student-fname-{{ x }}">First Name
+                                        <input id="student-fname-{{ x }}" type="text" name="student-fname-{{ x }}">
+                                    </label>
+                                </div>
+
+                                <div class="medium-4 columns">
+                                    <label for="student-lname-{{ x }}">Last Name
+                                        <input id="student-lname-{{ x }}" type="text" name="student-lname-{{ x }}">
+                                    </label>
+                                </div>
+
+                                <div class="medium-4 columns">
+                                    <label for="student-email-{{ x }}">Email
+                                        <input id="student-email-{{ x }}" type="text" name="student-email-{{ x }}">
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <p class="note"><strong>Note:</strong> By entering an email you are granting GGFRC permission to send club emails directly to your student. The primary contact will <em>always</em> receive copies of these emails. There are <em>no exceptions</em>.</p>
+                                </div>
+                            </div>
+
+
+                        </fieldset>
+                    {% endfor %}
+                    <div class="repeatable-control">
+                        <input id="students" type="hidden" name="students" value="1"/>
+                        <button
+                            class="add-repeatable-section tiny"
+                            title="Add Student"
+                            data-max="5"
+                            data-counter="#students"
+                            data-section-prefix="student-"
+                            type="button">Add Student</button>
+                        <button
+                            class="remove-repeatable-section tiny"
+                            title="Remove Student"
+                            data-min="1"
+                            data-counter="#students"
+                            data-section-prefix="student-"
+                            type="button">Remove Student</button>
+                    </div>
+                </div>
             </div><!-- End Row -->
-        </div>
-        <div class="row">
-            <div class="large-12 columns">
-                {% for x in range(5) %}
-                    {% if x == 0 %}
-                        <fieldset id="student-{{ x+1 }}" class="panel">
-                                <legend>Student</legend>
-                    {% else %}
-                        <fieldset id="student-{{ x+1 }}" class="hidden panel">
-                                <legend>Student {{ x+1 }}</legend>
-                    {% endif %}
+            <div class="row">
+                <div class="large-12 columns">
+                    <h3><span class="step-number">2</span>Contact Info</h3>
+                </div>
+            </div><!-- End Row -->
+            <div class="row">
+                <div class="large-12 columns">
+                    <fieldset class="panel">
+                        <legend>Parent / Guardian <small>( Primary Contact )</small></legend>
 
                         <div class="row">
-                            <div class="medium-4 columns">
-                                <label for="student-fname-{{ x }}">First Name
-                                    <input id="student-fname-{{ x }}" type="text" name="student-fname-{{ x }}">
+                            <div class="medium-6 columns">
+                                <label for="parent-fname">First Name
+                                    <input id="parent-fname" type="text" name="parent-fname">
                                 </label>
                             </div>
 
-                            <div class="medium-4 columns">
-                                <label for="student-lname-{{ x }}">Last Name
-                                    <input id="student-lname-{{ x }}" type="text" name="student-lname-{{ x }}">
+                            <div class="medium-6 columns">
+                                <label for="parent-lname">Last Name
+                                    <input id="parent-lname" type="text" name="parent-lname">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="medium-6 columns">
+                                <label for="parent-email">Email
+                                    <input id="parent-email" type="text" name="parent-email">
                                 </label>
                             </div>
 
-                            <div class="medium-4 columns">
-                                <label for="student-email-{{ x }}">Email
-                                    <input id="student-email-{{ x }}" type="text" name="student-email-{{ x }}">
+                            <div class="medium-6 columns">
+                                <label for="parent-phone">Emergency Phone Number
+                                    <input id="parent-phone" type="text" name="parent-phone">
                                 </label>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="large-12 columns">
-                                <p class="note"><strong>Note:</strong> By entering an email you are granting GGFRC permission to send club emails directly to your student. The primary contact will <em>always</em> receive copies of these emails. There are <em>no exceptions</em>.</p>
+                                <p class="note"><strong>Note:</strong> The email provided will be the primary point of contact, and the phone number will be used in the event of an emergency.</p>
                             </div>
                         </div>
 
-
+                        <div class="row">
+                            <div class="large-12 columns">
+                                <label for="referral">How did you hear about us?
+                                    <textarea id="referral" type="text" name="referral" rows="8" cols="40"></textarea>
+                                </label>
+                            </div>
+                        </div>
                     </fieldset>
-                {% endfor %}
-                <div class="repeatable-control">
-                    <input id="students" type="hidden" name="students" value="1"/>
-                    <button
-                        class="add-repeatable-section tiny"
-                        title="Add Student"
-                        data-max="5"
-                        data-counter="#students"
-                        data-section-prefix="student-"
-                        type="button">Add Student</button>
-                    <button
-                        class="remove-repeatable-section tiny"
-                        title="Remove Student"
-                        data-min="1"
-                        data-counter="#students"
-                        data-section-prefix="student-"
-                        type="button">Remove Student</button>
+
+                    <fieldset class="panel">
+                        <legend>Alternate Contact</legend>
+
+                        <div class="row">
+                            <div class="medium-6 columns">
+                                <label for="alternate-fname">First Name
+                                    <input id="alternate-fname" type="text" name="alternate-fname">
+                                </label>
+                            </div>
+
+                            <div class="medium-6 columns">
+                                <label for="alternate-lname">Last Name
+                                    <input id="alternate-lname" type="text" name="alternate-lname">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="medium-6 columns">
+                                <label for="alternate-phone">Emergency Phone Number</label>
+
+                                <input id="alternate-phone" type="text" name="alternate-phone">
+                            </div>
+
+                            <div class="medium-6 columns">
+                                <label for="alternate-email">Email
+                                    <input id="alternate-email" type="text" name="alternate-email">
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <button type="submit">Onward! →</button>
                 </div>
-            </div>
-        </div><!-- End Row -->
-        <div class="row">
-            <div class="large-12 columns">
-                <h3><span class="step-number">2</span>Contact Info</h3>
-            </div>
-        </div><!-- End Row -->
-        <div class="row">
-            <div class="large-12 columns">
-                <fieldset class="panel">
-                    <legend>Parent / Guardian <small>( Primary Contact )</small></legend>
-
-                    <div class="row">
-                        <div class="medium-6 columns">
-                            <label for="parent-fname">First Name
-                                <input id="parent-fname" type="text" name="parent-fname">
-                            </label>
-                        </div>
-
-                        <div class="medium-6 columns">
-                            <label for="parent-lname">Last Name
-                                <input id="parent-lname" type="text" name="parent-lname">
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="medium-6 columns">
-                            <label for="parent-email">Email
-                                <input id="parent-email" type="text" name="parent-email">
-                            </label>
-                        </div>
-
-                        <div class="medium-6 columns">
-                            <label for="parent-phone">Emergency Phone Number
-                                <input id="parent-phone" type="text" name="parent-phone">
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="large-12 columns">
-                            <p class="note"><strong>Note:</strong> The email provided will be the primary point of contact, and the phone number will be used in the event of an emergency.</p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="large-12 columns">
-                            <label for="referral">How did you hear about us?
-                                <textarea id="referral" type="text" name="referral" rows="8" cols="40"></textarea>
-                            </label>
-                        </div>
-                    </div>
-                </fieldset>
-
-                <fieldset class="panel">
-                    <legend>Alternate Contact</legend>
-
-                    <div class="row">
-                        <div class="medium-6 columns">
-                            <label for="alternate-fname">First Name
-                                <input id="alternate-fname" type="text" name="alternate-fname">
-                            </label>
-                        </div>
-
-                        <div class="medium-6 columns">
-                            <label for="alternate-lname">Last Name
-                                <input id="alternate-lname" type="text" name="alternate-lname">
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="medium-6 columns">
-                            <label for="alternate-phone">Emergency Phone Number</label>
-
-                            <input id="alternate-phone" type="text" name="alternate-phone">
-                        </div>
-
-                        <div class="medium-6 columns">
-                            <label for="alternate-email">Email
-                                <input id="alternate-email" type="text" name="alternate-email">
-                            </label>
-                        </div>
-                    </div>
-                </fieldset>
-                <button type="submit">Onward! →</button>
-            </div>
-        </div><!-- End Row -->
+            </div><!-- End Row -->
+        </div><!-- End Panel -->
     </form>
 </div><!-- End Container -->
 {% endblock %}

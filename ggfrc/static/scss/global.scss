@@ -38,7 +38,7 @@ body {
     background-position:  100% 25%;
     background-image: url("../img/ggfrc-bg.min.png");
     background-color: #333;
-    padding: 200px 0 140px 0;
+    padding: 150px 0 100px 0;
     margin-bottom: 70px;
     margin-top: -60px;
 
@@ -86,11 +86,12 @@ hr {
     background-repeat: no-repeat;
     background-position:  0% 10%;
     background-image: url("../img/ggfrc-bg.min.png");
-    background-color: #ddd;
+    background-color: #333;
     padding-top: 20px;
 
     #copyright {
         p {
+            color: white;
             text-align: right;
             font-size: .75rem;
 
@@ -131,14 +132,12 @@ sup {
 
 /* Forms */
 
-.step-number {
-    margin-top: 40px;
+form .panel:nth-child(1) {
+    margin-top: 35px;
 }
 
 fieldset legend {
-    border: 1px solid #d8d8d8;
-    border-bottom: none;
-    padding: 10px 15px 0;
+    padding: 0 15px;
 }
 
 .step-number {
@@ -149,10 +148,15 @@ fieldset legend {
   display: inline-block;
   font-size: 0.8em;
   margin-right: 7px;
+  margin-top: 40px;
   line-height: 30px;
   text-align: center;
   text-shadow: 0 1px 0 rgba(255,255,255,0.2);
   border-radius: 100%;
+
+  &.alpha {
+    margin-top: 0;
+  }
 }
 
 // label[for="mce-EMAIL"] {
