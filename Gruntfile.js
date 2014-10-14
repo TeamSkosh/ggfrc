@@ -106,6 +106,18 @@ module.exports = function(grunt) {
           flatten: true,
           filter: "isFile"
         }]
+      },
+      foundation_funcs: {
+        files: [{
+          expand: true,
+          src: ["bower_components/foundation/scss/foundation/_functions.scss"],
+          dest: "ggfrc/static/scss/",
+          flatten: true,
+          filter: "isFile",
+          rename: function(dest, src) {
+            return dest + "_" + "foundation-" + src.replace('_','');
+          }
+        }]
       }
     }
 
@@ -113,9 +125,17 @@ module.exports = function(grunt) {
 
   require("load-grunt-tasks")(grunt);
 
-  grunt.registerTask("styles", ["newer:sass:global", "newer:sass:foundation", "newer:autoprefixer"]);
+  grunt.registerTask("styles", [
+    "newer:copy:foundation_funcs",
+    "newer:sass:global",
+    "newer:sass:foundation",
+    "newer:autoprefixer"
+  ]);
 
-  grunt.registerTask("js", ["newer:uglify", "newer:copy:foundation_js"]);
+  grunt.registerTask("js", [
+    "newer:uglify",
+    "newer:copy:foundation_js"
+  ]);
 
   grunt.registerTask("images", [
     "newer:svgstore",
@@ -123,6 +143,7 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask("build", [
+    "newer:copy:foundation_funcs",
     "sass:global",
     "sass:foundation",
     "newer:autoprefixer",
@@ -133,6 +154,9 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask("default", [
+    "newer:copy:foundation_funcs",
+    "newer:uglify",
+    "newer:copy:foundation_js",
     "sass:global",
     "sass:foundation",
     "autoprefixer",
