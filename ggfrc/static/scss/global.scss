@@ -1,0 +1,156 @@
+body {
+    background: url('../img/escheresque-bg.png') fixed;
+    color: #545454;
+}
+
+#svg-defs {
+    display: none;
+}
+
+.top-bar {
+    background-color: rgba(0,0,0,0);
+    max-width: 960px;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+}
+
+.main-logo {
+    float: left;
+    height: 45px;
+    padding-top: 7px;
+
+    svg {
+        float: left;
+        max-height: 45px;
+        max-width: 45px;
+    }
+
+    p {
+        margin-left: 55px;
+        margin-top: 7px;
+        font-size: 1.3rem;
+        color: white;
+    }
+}
+
+.hero {
+    background-repeat: no-repeat;
+    background-position:  100% 25%;
+    background-image: url("../img/ggfrc-bg.min.png");
+    background-color: #333;
+    padding: 200px 0 140px 0;
+    margin-bottom: 70px;
+    margin-top: -60px;
+
+    h1 {
+        color: #fff;
+        margin-bottom: 30px;
+        text-shadow: 0 1px rgba(0,0,0,.5);
+    }
+
+    .lead {
+        color: #999;
+        margin-bottom: 20px;
+    }
+
+    .lead:nth-of-type(2) {
+        margin-bottom: 50px;
+    }
+
+    .lead:nth-of-type(3) {
+        font-size: 1rem;
+    }
+}
+
+.btn {
+    color: inherit;
+    border: solid 2px;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 12px 22px;
+    display: inline-block;
+}
+.btn:hover {
+    background-color: white;
+    border-color: white;
+    color: #6A9988;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #6A9988;
+}
+
+#footer {
+    background-repeat: no-repeat;
+    background-position:  0% 10%;
+    background-image: url("../img/ggfrc-bg.min.png");
+    background-color: #ddd;
+    padding-top: 20px;
+
+    #copyright {
+        p {
+            text-align: right;
+            font-size: .75rem;
+
+            @media screen and (max-width: 64em) {
+                text-align: center;
+            }
+        }
+    }
+}
+
+/* Utilities */
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
+
+sup {
+    font-size: 50%;
+    top: -7px;
+}
+
+/* Forms */
+
+// label[for="mce-EMAIL"] {
+//     color: #6A9988;
+//     display: block;
+//     font-size: 24px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     margin-top: 35px;
+//     max-width: 500px;
+//     width: 100%;
+// }
+
+// input[type="email"],
+// input[type="submit"] {
+//     border: none;
+//     border-radius: 10px;
+//     box-sizing: border-box;
+//     display: block;
+//     font-size: 24px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     margin-top: 35px;
+//     padding: 10px 20px;
+//     outline: 0;
+// }
+
+// input[type="email"] {
+//     max-width: 500px;
+//     width: 100%;
+// }
+
+// input[type="submit"] {
+//     background: rgba(0,0,0,0);
+//     border: 4px solid #C0C0C0;
+// }
+
+// input[type="submit"]:hover {
+//     background: #C0C0C0;
+// }
