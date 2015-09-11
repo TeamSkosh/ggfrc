@@ -1,0 +1,801 @@
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "sass:foundation" (sass) task[24m
+File static/css/foundation.min.custom.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "uglify:global" (uglify) task[24m
+File "static/js/global.min.js" created.
+
+[4mRunning "newer:svgstore" (newer) task[24m
+
+[4mRunning "newer:svgstore:default" (newer) task[24m
+No newer files to process.
+
+[4mRunning "newer:imagemin:png" (newer) task[24m
+No newer files to process.
+
+[4mRunning "watch" task[24m
+Waiting...[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.141s at Mon Jun 15 2015 22:52:55 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.035s at Mon Jun 15 2015 22:53:04 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.026s at Mon Jun 15 2015 22:53:06 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.019s at Mon Jun 15 2015 22:53:09 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.029s at Mon Jun 15 2015 22:53:20 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.033s at Mon Jun 15 2015 22:53:22 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.137s at Mon Jun 15 2015 22:53:30 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.174s at Mon Jun 15 2015 22:53:42 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.191s at Mon Jun 15 2015 22:54:08 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.014s at Mon Jun 15 2015 22:54:13 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.154s at Mon Jun 15 2015 22:54:19 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.021s at Mon Jun 15 2015 22:54:23 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.036s at Mon Jun 15 2015 22:54:33 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.192s at Mon Jun 15 2015 22:54:35 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.018s at Mon Jun 15 2015 22:54:40 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/js/global.min.js" changed.
+
+[4mRunning "uglify:global" (uglify) task[24m
+File "static/js/global.min.js" created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.005s at Mon Jun 15 2015 22:54:47 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/js/global.min.js" changed.
+
+[4mRunning "uglify:global" (uglify) task[24m
+File "static/js/global.min.js" created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 0.993s at Mon Jun 15 2015 22:54:48 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/js/global.min.js" changed.
+
+[4mRunning "uglify:global" (uglify) task[24m
+File "static/js/global.min.js" created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.013s at Mon Jun 15 2015 22:54:49 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/js/global.min.js" changed.
+
+[4mRunning "uglify:global" (uglify) task[24m
+File "static/js/global.min.js" created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 0.989s at Mon Jun 15 2015 22:54:51 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/js/global.min.js" changed.
+
+[4mRunning "uglify:global" (uglify) task[24m
+File "static/js/global.min.js" created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 0.994s at Mon Jun 15 2015 22:54:52 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/js/global.min.js" changed.
+
+[4mRunning "uglify:global" (uglify) task[24m
+File "static/js/global.min.js" created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 0.999s at Mon Jun 15 2015 22:54:53 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/js/global.min.js" changed.
+
+[4mRunning "uglify:global" (uglify) task[24m
+File "static/js/global.min.js" created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.057s at Mon Jun 15 2015 22:54:55 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/js/global.min.js" changed.
+
+[4mRunning "uglify:global" (uglify) task[24m
+File "static/js/global.min.js" created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.028s at Mon Jun 15 2015 22:54:56 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/js/global.min.js" changed.
+
+[4mRunning "uglify:global" (uglify) task[24m
+File "static/js/global.min.js" created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.026s at Mon Jun 15 2015 22:54:57 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/js/global.min.js" changed.
+
+[4mRunning "uglify:global" (uglify) task[24m
+File "static/js/global.min.js" created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.116s at Mon Jun 15 2015 22:54:59 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/js/global.min.js" changed.
+
+[4mRunning "uglify:global" (uglify) task[24m
+File "static/js/global.min.js" created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.050s at Mon Jun 15 2015 22:55:00 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/js/global.min.js" changed.
+
+[4mRunning "uglify:global" (uglify) task[24m
+File "static/js/global.min.js" created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.109s at Mon Jun 15 2015 22:55:01 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/js/global.min.js" changed.
+
+[4mRunning "uglify:global" (uglify) task[24m
+File "static/js/global.min.js" created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.040s at Mon Jun 15 2015 22:55:03 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/js/global.min.js" changed.
+
+[4mRunning "uglify:global" (uglify) task[24m
+File "static/js/global.min.js" created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.023s at Mon Jun 15 2015 22:55:04 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/js/global.min.js" changed.
+
+[4mRunning "uglify:global" (uglify) task[24m
+File "static/js/global.min.js" created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.013s at Mon Jun 15 2015 22:55:05 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/js/global.min.js" changed.
+
+[4mRunning "uglify:global" (uglify) task[24m
+File "static/js/global.min.js" created.
+
+[32mDone, without errors.[39m
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 3.328s at Mon Jun 15 2015 22:55:08 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+[32m>> [39mFile "static/js/global.min.js" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.228s at Mon Jun 15 2015 22:55:13 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.129s at Mon Jun 15 2015 22:55:24 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.137s at Mon Jun 15 2015 22:58:20 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.076s at Mon Jun 15 2015 22:59:12 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.084s at Mon Jun 15 2015 22:59:16 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.154s at Mon Jun 15 2015 22:59:17 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.154s at Mon Jun 15 2015 23:09:34 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.118s at Mon Jun 15 2015 23:09:49 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.152s at Mon Jun 15 2015 23:10:00 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.084s at Mon Jun 15 2015 23:10:09 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.034s at Mon Jun 15 2015 23:10:17 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.103s at Mon Jun 15 2015 23:10:25 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.161s at Mon Jun 15 2015 23:13:10 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.137s at Mon Jun 15 2015 23:14:15 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.155s at Mon Jun 15 2015 23:14:20 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.137s at Mon Jun 15 2015 23:14:30 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.031s at Mon Jun 15 2015 23:17:00 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.149s at Mon Jun 15 2015 23:17:02 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.018s at Mon Jun 15 2015 23:17:12 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+[33mWarning: /Users/nzac/j/skosh/ggfrc/static/scss/global.scss:16: error: error reading values after center
+ Use --force to continue.[39m
+
+[31mAborted due to warnings.[39m
+[36mCompleted in 0.985s at Mon Jun 15 2015 23:17:21 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.042s at Mon Jun 15 2015 23:17:23 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.125s at Mon Jun 15 2015 23:17:26 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.023s at Mon Jun 15 2015 23:17:32 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.093s at Mon Jun 15 2015 23:17:36 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.115s at Mon Jun 15 2015 23:17:41 GMT-0500 (CDT)[39m - Waiting...
+[32mOK[39m
+[32m>> [39mFile "static/scss/global.scss" changed.
+
+[4mRunning "sass:global" (sass) task[24m
+File static/css/global.min.css created.
+
+[4mRunning "autoprefixer:global" (autoprefixer) task[24m
+File static/css/global.min.css created.
+
+[32mDone, without errors.[39m
+[36mCompleted in 1.115s at Mon Jun 15 2015 23:17:57 GMT-0500 (CDT)[39m - Waiting...
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              127.0.0.1 - - [15/Jun/2015 22:52:28] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:52:28] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:52:28] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:52:28] "GET /static/img/fll-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:52:29] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:52:55] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:52:55] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:52:55] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:52:55] "GET /static/img/fll-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:52:55] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:53:30] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:53:30] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:53:30] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:53:30] "GET /static/img/fll-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:53:31] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:53:42] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:53:42] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:53:42] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:53:42] "GET /static/img/fll-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:53:42] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:54:08] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:54:08] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:54:08] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:54:08] "GET /static/img/fll-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:54:08] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:54:19] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:54:19] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:54:19] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:54:19] "GET /static/img/fll-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:54:19] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:54:23] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:54:23] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:54:23] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:54:23] "GET /static/img/fll-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:54:23] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:54:35] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:54:35] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:54:35] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:54:35] "GET /static/img/fll-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:54:35] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:54:58] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:54:58] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:54:58] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:54:58] "GET /static/img/fll-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:54:59] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:55:08] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:55:08] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:55:08] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:55:08] "GET /static/img/fll-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:55:08] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:55:13] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:55:13] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:55:13] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:55:13] "GET /static/img/fll-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:55:13] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:55:15] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:55:15] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:55:15] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:55:15] "GET /static/img/fll-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:55:15] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:55:24] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:55:24] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:55:24] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:55:24] "GET /static/img/fll-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:55:24] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:57:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:57:50] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:57:50] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:57:50] "GET /static/img/fll-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:57:50] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:58:02] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:58:02] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:58:02] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:58:02] "GET /static/img/fll-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:58:02] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:58:20] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:58:20] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:58:20] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:58:20] "GET /static/img/fll-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:58:20] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:59:18] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:59:18] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:59:18] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:59:18] "GET /static/img/fll-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 22:59:18] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:09:35] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:09:35] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:09:35] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:09:35] "GET /static/img/fll-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:09:35] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:09:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:09:50] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:09:50] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:09:50] "GET /static/img/fll-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:09:50] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:10:01] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:10:01] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:10:01] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:10:01] "GET /static/img/fll-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:10:01] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:10:10] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:10:10] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:10:10] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:10:10] "GET /static/img/fll-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:10:10] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:10:26] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:10:26] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:10:26] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:10:26] "GET /static/img/fll-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:10:26] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:10:29] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:11:20] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:11:20] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:11:20] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:11:20] "GET /static/img/fll-logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:11:20] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:12:23] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:12:23] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:12:23] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:12:24] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:12:55] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:12:55] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:12:55] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:12:55] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:13:01] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:13:01] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:13:01] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:13:01] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:13:10] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:13:10] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:13:10] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:13:10] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:13:43] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:13:43] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:13:43] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:13:43] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:13:54] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:13:54] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:13:54] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:13:54] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:14:15] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:14:15] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:14:15] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:14:15] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:14:20] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:14:20] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:14:20] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:14:20] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:14:30] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:14:30] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:14:30] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:14:30] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:14:33] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:14:56] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:15:42] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:15:42] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:15:42] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:15:42] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:16:11] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:16:11] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:16:11] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:16:11] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:16:46] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:16:46] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:16:46] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:16:46] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:17:03] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:17:03] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:17:03] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:17:03] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:17:26] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:17:26] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:17:26] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:17:26] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:17:37] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:17:37] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:17:37] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:17:37] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:17:41] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:17:41] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:17:41] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:17:42] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:17:58] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:17:58] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:17:58] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:17:58] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:18:01] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:18:22] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:18:22] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:18:22] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:18:22] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:18:34] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:18:34] "GET /static/css/foundation.min.custom.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:18:34] "GET /static/css/global.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2015 23:18:34] "GET /static/img/ggfrc-bg.min.png HTTP/1.1" 200 -

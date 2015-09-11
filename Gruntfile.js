@@ -8,7 +8,7 @@ module.exports = function(grunt) {
     uglify: {
       global: {
         files: {
-          "ggfrc/static/js/global.min.js": ["ggfrc/static/js/global.js"]
+          "static/js/global.min.js": ["static/js/global.js"]
         }
       }
     },
@@ -22,7 +22,7 @@ module.exports = function(grunt) {
           outputStyle: "compressed"
         },
         files: {
-          "ggfrc/static/css/global.min.css": "ggfrc/static/scss/global.scss"
+          "static/css/global.min.css": "static/scss/global.scss"
         }
       },
       foundation: {
@@ -30,14 +30,14 @@ module.exports = function(grunt) {
           outputStyle: "compressed"
         },
         files: {
-          "ggfrc/static/css/foundation.min.custom.css": "ggfrc/static/scss/foundation-custom.scss"
+          "static/css/foundation.min.custom.css": "static/scss/foundation-custom.scss"
         }
       }
     },
 
     autoprefixer: {
       global: {
-        src: "ggfrc/static/css/global.min.css"
+        src: "static/css/global.min.css"
       }
     },
 
@@ -46,23 +46,23 @@ module.exports = function(grunt) {
         livereload: true
       },
       global_styles: {
-        files: ["ggfrc/static/scss/global.scss"],
+        files: ["static/scss/global.scss"],
         tasks: ["sass:global", "autoprefixer"]
       },
       foundation_styles: {
-        files: ["ggfrc/static/scss/_foundation-settings.scss", "ggfrc/static/foundation-custom.scss"],
+        files: ["static/scss/_foundation-settings.scss", "static/foundation-custom.scss"],
         tasks: ["sass:foundation"]
       },
       js: {
-        files: ["ggfrc/static/js/*.js"],
+        files: ["static/js/*.js"],
         tasks: ["uglify"]
       },
       svg: {
-        files: ["ggfrc/static/svg/*.svg"],
+        files: ["static/svg/*.svg"],
         tasks: ["newer:svgstore"]
       },
       img: {
-        files: ["ggfrc/static/img/*.png"],
+        files: ["static/img/*.png"],
         tasks: ["newer:imagemin:png"]
       }
     },
@@ -80,7 +80,7 @@ module.exports = function(grunt) {
       },
       default: {
         files: {
-          "ggfrc/static/svg/svg-defs.svg": ["ggfrc/static/svg/shapes/*.svg"]
+          "static/svg/svg-defs.svg": ["static/svg/shapes/*.svg"]
         }
       }
     },
@@ -89,9 +89,9 @@ module.exports = function(grunt) {
       png: {
         files: [{
           expand: true,
-          cwd: "ggfrc/static/img/",
+          cwd: "static/img/",
           src: ["*.png"],
-          dest: "ggfrc/static/img/",
+          dest: "static/img/",
           ext: ".min.png"
         }]
       }
@@ -102,7 +102,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           src: ["bower_components/foundation/js/foundation.min.js", "bower_components/foundation/js/vendor/fastclick.js"],
-          dest: "ggfrc/static/js/",
+          dest: "static/js/",
           flatten: true,
           filter: "isFile"
         }]
