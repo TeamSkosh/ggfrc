@@ -1,0 +1,150 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    _helpers.scss
+
+    Simple utility classes for showing, hiding, and positioning
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.group {
+    @include clearfix;
+}
+
+// NOTE: The hidden class is inaccessible
+.hidden {display: none;}
+
+// Borrowed from H5BP and Jonathon Snook:
+// https://github.com/h5bp/html5-boilerplate/blob/697fa65431bcafae222f13f574e27b1f21f81286/dist/css/main.css#L133
+// http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.left {float: left;}
+.right {float: right;}
+
+.disabled,
+[disabled] {
+    cursor: not-allowed !important;
+}
+
+[readonly] {
+    cursor: not-allowed !important;
+}
+
+// Font smoothing works best for light text on a dark background.
+.antialiased {
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+// Border radius
+.rounded {
+    border-radius: 1000px;
+}
+
+.radius {
+    border-radius: $border-radius;
+}
+
+// Color helpers
+.primary {
+    background: $brand-primary;
+    color: $white;
+}
+hr.primary {
+    border-color: $brand-primary;
+}
+.primary-text {
+    color: $brand-primary;
+}
+
+.secondary {
+    background: $brand-secondary;
+    color: $white;
+}
+hr.secondary {
+    border-color: $brand-secondary;
+}
+.secondary-text {
+    color: $brand-secondary;
+}
+
+.tertiary {
+    background: $brand-tertiary;
+    color: $white;
+}
+hr.tertiary {
+    border-color: $brand-tertiary;
+}
+.tertiary-text {
+    color: $brand-tertiary;
+}
+
+.info {
+    background: $debug-color-1;
+    color: $white;
+}
+hr.info {
+    border-color: $debug-color-1;
+}
+.info-text {
+    color: $debug-color-1;
+}
+
+.success {
+    background: $debug-color-2;
+    color: $white;
+}
+hr.success {
+    border-color: $debug-color-2;
+}
+.success-text {
+    color: $debug-color-2;
+}
+
+.warn {
+    background: $debug-color-5;
+    color: $white;
+}
+hr.warn {
+    border-color: $debug-color-5;
+}
+.warn-text {
+    color: $debug-color-5;
+}
+
+.alert {
+    background: $debug-color-4;
+    color: $white;
+}
+hr.alert {
+    border-color: $debug-color-4;
+}
+.alert-text {
+    color: $debug-color-4;
+}
+
+.gray {
+    background: $gray-tint;
+}
+hr.gray {
+    border-color: $gray-tint-text;
+}
+.gray-text {
+    color: $gray-tint-text;
+}

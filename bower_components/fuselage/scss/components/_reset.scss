@@ -1,0 +1,40 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    _reset.scss
+
+    Basic reset
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+// Set root font-size to 10px and hide html overflow
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+// Global box-sizing
+* {box-sizing: border-box;}
+
+// Other Basic Resets
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, hr, figure {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    border-top: none;
+}
+
+// Forms
+textarea {
+    height: auto;
+    min-height: 50px;
+}

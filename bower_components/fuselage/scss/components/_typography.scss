@@ -1,0 +1,204 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    _typography.scss
+
+    Typographic styles and modular scale
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+// Modular Scale
+@include modular-headings;
+
+body {
+    font-family: $base-font;
+    font-size: $base-font-size * 0.85;
+    line-height: $base-line-height;
+    font-weight: 200;
+    color: $text-color;
+    -webkit-text-size-adjust: 100%;
+
+    @include mq($medium) {
+      font-size: $base-font-size;
+    }
+
+    @media print {
+      font-size: 14px;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, hr,
+p, blockquote, pre, table,
+ul, ol, dl, figure, address,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit;
+}
+
+dl, ol, ul {
+  dl, ol, ul {
+    margin-bottom: 0;
+  }
+}
+
+small {
+  color: lighten($gray, 15%);
+  font-size: 70%;
+  font-weight: 100;
+}
+
+.headline {
+  font-family: $base-font;
+  font-weight: 100;
+  font-size: modular-scale(4);
+  line-height: 1;
+
+  @include mq($medium) {
+    font-size: modular-scale(5);
+  }
+
+  @include mq($large) {
+    font-size: modular-scale(6);
+  }
+
+  @media print {
+    font-size: modular-scale(4);
+  }
+}
+
+.deck {
+  color: lighten($gray, 15%);
+  font-size: modular-scale(2);
+  line-height: 1.25;
+
+  @include mq($small) {
+    font-size: modular-scale(2) * 1.25;
+  }
+
+  @include mq($medium) {
+    font-size: modular-scale(3);
+  }
+
+  @include mq($large) {
+    font-size: modular-scale(3);
+  }
+
+  @media print {
+    font-size: modular-scale(1);
+  }
+}
+
+.byline {
+  font-size: modular-scale(2);
+  font-weight: normal;
+
+  @include mq($small) {
+    font-size: modular-scale(2) * 1.25;
+  }
+
+  @media print {
+    font-size: modular-scale(1) * 0.9;
+  }
+}
+
+.drop-cap {
+    span.initial-phrase {
+        color: $brand-secondary;
+        font-variant: small-caps;
+    }
+
+    &::first-letter {
+        color: $brand-secondary;
+        float: left;
+        font-size: 324%;
+        line-height: 0.95;
+    }
+}
+
+figcaption,
+.caption {
+  color: $gray;
+  font-size: modular-scale(2);
+
+  @media print {
+    font-size: modular-scale(1);
+  }
+}
+
+h1, h2 {
+  font-weight: 100;
+}
+
+blockquote {
+    color: lighten($gray, 15%);
+    border-left: 1px solid lighten($gray, 30%);
+    padding-left: $spacing-unit;
+    font-weight: 200;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: $spacing-unit;
+
+  &+ dt {
+    margin-top: $spacing-unit;
+  }
+}
+
+// Code
+pre,
+code,
+kbd {
+    font-family: $mono-font;
+    font-size: $code-font-size;
+    border-radius: $border-radius / 2;
+    background-color: $gray-tint;
+}
+
+code {
+    padding: 1px 5px;
+}
+
+kbd {
+  font-weight: bold;
+}
+
+pre {
+    padding: $spacing-unit;
+    position: relative;
+    overflow-x: scroll;
+    white-space: pre;
+    word-wrap: normal;
+
+    &:after {
+      content: attr(rel);
+      position: absolute;
+      top: $spacing-unit / 2.5;
+      right: $spacing-unit / 2.5;
+    }
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, hr,
+p, blockquote, pre, table,
+ul, ol, dl, figure, address {
+  a:not(.button) {
+    @include text-link($brand-primary);
+
+    &.secondary-text {@include text-link($brand-secondary);}
+    &.tertiary-text {@include text-link($brand-tertiary);}
+    &.info-text {@include text-link($info-color);}
+    &.success-text {@include text-link($success-color);}
+    &.warn-text {@include text-link($warn-color);}
+    &.alert-text {@include text-link($alert-color);}
+    &.gray-text {@include text-link($gray-tint-text);}
+  }
+}

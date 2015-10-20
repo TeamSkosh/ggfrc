@@ -1,8 +1,2 @@
-*.egg-info*
-bower_components/
-node_modules/
-*.egg*
-ggfrc/config.py
-*.sass-cache
-local.config
-
+_site
+.sass-cache

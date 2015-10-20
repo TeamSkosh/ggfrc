@@ -1,0 +1,259 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    _mixins.scss
+
+    Framework-wide tools
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+}
+
+// Media query setup. Takes media size and optional parameter for "print"
+@mixin mq($media-size, $media: "screen") {
+    @if $media == "print" {
+        @media #{$media} {
+            @content;
+        }
+        @media screen and (min-width: #{$media-size}) {
+            @content;
+        }
+    } @else {
+        @media #{$media} and (min-width: #{$media-size}) {
+            @content;
+        }
+    }
+
+}
+
+// Width calculator
+@mixin width-calc($divisor, $dividend) {
+    $width: percentage($divisor / $dividend);
+    width: $width;
+}
+
+// Width setup
+@mixin width-setup($namespace: "") {
+    @if $namespace != "" {$namespace: $namespace + "-";}
+
+    .#{$namespace}one-whole {width: 100%;}
+
+    .#{$namespace}one-half {@include width-calc(1,2);}
+
+    .#{$namespace}one-third {@include width-calc(1,3);}
+    .#{$namespace}two-thirds {@include width-calc(2,3);}
+
+    .#{$namespace}one-fourth {@include width-calc(1,4);}
+    .#{$namespace}three-fourths {@include width-calc(3,4);}
+
+    .#{$namespace}one-fifth {@include width-calc(1,5);}
+    .#{$namespace}two-fifths {@include width-calc(2,5);}
+    .#{$namespace}three-fifths {@include width-calc(3,5);}
+    .#{$namespace}four-fifths {@include width-calc(4,5);}
+
+    .#{$namespace}one-sixth {@include width-calc(1,6);}
+    .#{$namespace}five-sixths {@include width-calc(5,6);}
+
+    .#{$namespace}one-eighth {@include width-calc(1,8);}
+    .#{$namespace}three-eighths {@include width-calc(3,8);}
+    .#{$namespace}five-eighths {@include width-calc(5,8);}
+    .#{$namespace}seven-eighths {@include width-calc(7,8);}
+
+    .#{$namespace}one-tenth {@include width-calc(1,10);}
+    .#{$namespace}three-tenths {@include width-calc(3,10);}
+    .#{$namespace}seven-tenths {@include width-calc(7,10);}
+    .#{$namespace}nine-tenths {@include width-calc(9,10);}
+
+    .#{$namespace}one-twelfth {@include width-calc(1,12);}
+    .#{$namespace}five-twelfths {@include width-calc(5,12);}
+    .#{$namespace}seven-twelfths {@include width-calc(7,12);}
+    .#{$namespace}one-twelfths {@include width-calc(11,12);}
+}
+
+// Responsive Table Setup
+@mixin responsive-table-setup($namespace: "") {
+    @if $namespace != "" {$namespace: $namespace + "-";}
+
+    table.#{$namespace}responsive {
+        thead {
+            display: table-header-group;
+        }
+
+        tfoot {
+            display: table-footer-group;
+        }
+
+        td {
+            display: table-cell;
+            font-size: inherit;
+
+            &:before {
+                display: none;
+            }
+
+            &:nth-child(n+2) {
+                padding-top: ($spacing-unit / 2.5);
+            }
+        }
+    }
+}
+
+// Modular Scale
+@mixin modular-headings($scale-list: $generated-scale, $num-headings: 5) {
+    $headings: ();
+    @for $i from $num-headings through 1 {
+        $headings: append($headings, $i);
+    }
+
+    @for $i from 1 through length($headings) {
+        h#{nth($headings, $i)}, .h#{nth($headings, $i)} {
+            font-size: nth($scale-list, $i) * 0.5;
+            line-height: 1;
+
+            @include mq($small) {
+                font-size: nth($scale-list, $i) * 0.6;
+            }
+
+            @include mq($medium) {
+                font-size: nth($scale-list, $i) * 0.7;
+            }
+
+            @include mq($large) {
+                font-size: nth($scale-list, $i) * 0.9;
+            }
+
+            @media print {
+                font-size: nth($scale-list, $i) * 0.6;
+            }
+        }
+    }
+}
+
+// In-text links
+@mixin text-link($color: $brand-primary) {
+    color: $color;
+
+    &:hover {
+      border-bottom: 1px solid $color;
+    }
+
+    &.disabled,
+    &[disabled] {
+        color: lighten($gray, 12%);
+        border-bottom: 1px solid ;
+
+        &:hover {
+            border-bottom-color: lighten($gray, 12%);
+        }
+    }
+}
+
+// Buttons
+@mixin button($color, $hover: $transparent, $text: $white, $reverse: false) {
+    display: inline-block;
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: $spacing-unit;
+    padding: $spacing-unit / 1.5;
+    text-align: center;
+
+    @if $reverse == true {
+        background: $color;
+        border: 1px solid $color;
+        color: $text;
+
+        &:hover {
+            background: $hover;
+            color: $color;
+        }
+
+        &.disabled,
+        &[disabled] {
+            background: lighten($color, 12%);
+            border-color: lighten($color, 12%);
+            color: $text;
+
+            &:hover {
+                background: lighten($color, 12%);
+                border-color: lighten($color, 12%);
+            }
+        }
+    } @else {
+        background: $hover;
+        border: 1px solid $color;
+        color: $color;
+
+        &:hover {
+            background: $color;
+            color: $text;
+        }
+
+        &.disabled,
+        &[disabled] {
+            border-color: lighten($color, 12%);
+            color: lighten($color, 12%);
+
+            &:hover {
+                background: $hover;
+                color: lighten($color, 12%);
+            }
+        }
+    }
+}
+
+// Forms
+@mixin form-element {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #FFFFFF;
+    border: 1px solid #AFAFAF;
+    border-radius: 0;
+    display: block;
+    margin-bottom: $spacing-unit / 1.5;
+    outline: none;
+    padding: ($spacing-unit / 2.2) ($spacing-unit / 2.5) ($spacing-unit / 2.5);
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    width: 100%;
+
+    &:focus {
+        background-color: #F8F8F8;
+        border: 1px solid #505050;
+    }
+}
+
+// CSS Triangle
+@mixin css-triangle($triangle-size, $triangle-color, $triangle-direction) {
+    border: inset $triangle-size;
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+
+    @if ($triangle-direction == top) {
+        border-color: $triangle-color transparent transparent transparent;
+        border-top-style: solid;
+    }
+
+    @if ($triangle-direction == bottom) {
+        border-color: transparent transparent $triangle-color transparent;
+        border-bottom-style: solid;
+    }
+
+    @if ($triangle-direction == left) {
+        border-color: transparent transparent transparent $triangle-color;
+        border-left-style: solid;
+    }
+
+    @if ($triangle-direction == right) {
+        border-color: transparent $triangle-color transparent transparent;
+        border-right-style: solid;
+    }
+}

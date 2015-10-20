@@ -1,136 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title>Greater Grand Forks Robotics Club</title>
-        <link rel="stylesheet" href="/static/css/foundation.min.custom.css" type="text/css" media="screen" charset="utf-8">
-        <link rel="stylesheet" href="/static/css/global.min.css" type="text/css" media="screen" charset="utf-8">
-    </head>
-    <body>
-    <div class="hero">
-        <div class="row">
-            <div class="large-12 columns">
-                <h1>Greater Grand Forks Robotics Club</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="large-6 push-3 columns">
-                <p class="lead">Get a hands-on introduction to robotics by signing up for the Greater Grand Forks Robotics Club.</p>
+---
+layout: default
+---
 
-            </div>
-        </div>
-    </div>
-    </body>
-</html>
+<div class="home">
 
+  <h1 class="page-heading">Posts</h1>
 
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-            <div class="mailing-list">
-                <div id="mc_embed_signup">
-                    <form action="http://ggfrc.us8.list-manage.com/subscribe/post?u=667f8798d4954ac7106d77b28&amp;id=b39fbd60bc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <label id="fittext2" for="mce-EMAIL">Subscribe to receive updates</label>
-                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-                        <div style="position: absolute; left: -5000px;"><input type="text" name="b_667f8798d4954ac7106d77b28_b39fbd60bc" tabindex="-1" value=""></div>
-
-                        <div>
-                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--    <head>-->
-<!--        <meta http-equiv="X-UA-Compatible" content="IE=Edge">-->
-<!--        <meta charset="utf-8" />-->
-<!--        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
-
-<!--        <title>Greater Grand Forks Robotics Club</title>-->
-
-<!--        <link rel="stylesheet" href="/static/css/foundation.min.custom.css" type="text/css" media="screen" charset="utf-8">-->
-<!--        <link rel="stylesheet" href="/static/css/global.min.css" type="text/css" media="screen" charset="utf-8">-->
-<!--    </head>-->
-<!--<body>-->
-
-<!--    <div class="">-->
-<!--        <h1>Greater Grand Forks Robotics Club</h1>-->
-<!--    </div>-->
-
-<!--    [> Hero <]-->
-<!--    <div class="hero">-->
-<!--        <div class="row">-->
-<!--            <div class="large-6 columns">-->
-<!--                <h1>We're glad you're here, and so are the robots.</h1>-->
-<!--                <p class="lead">Get a hands-on introduction to robotics by signing up for The Greater Grand Forks Robotics Club.</p>-->
-
-<!--            </div>-->
-<!--        <div class="large-6 hide-for-small columns">-->
-<!--            <div class="device right">-->
-<!--                <img src="/static/img/fll-logo.png" width="200px">-->
-<!--            </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>[> End Hero <]-->
-<!--    <div id="footer">-->
-<!--        <div class="row">-->
-<!--            <div class="medium-6 columns">-->
-<!--                <form method="post" action="#">-->
-<!--                    <div class="row collapse margintop-20px">-->
-<!--                        <div class="small-8 columns">-->
-<!--                            <input type="text" name="email" placeholder="Sign up for our Newsletter">-->
-<!--                        </div>-->
-<!--                        <div class="small-4 columns">-->
-<!--                            <input type="submit" href="#" class="postfix small button expand" value="Sign Up">-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </form>-->
-<!--            </div>-->
-<!--            <div id="copyright" class="medium-6 columns copyright">-->
-<!--                <p>&copy; 2015. Greater Grand Forks Robotics Club</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
-<!--    <script src="/static/js/fastclick.js"></script>-->
-<!--    <script src="/static/js/foundation.min.js"></script>-->
-<!--    <script src="/static/js/global.min.js"></script>-->
-<!--    <script type="text/javascript">-->
-<!--        [> Load Foundation <]-->
-<!--        $(document).foundation();-->
-
-<!--        [> Load SVG <]-->
-<!--        $("#svg-defs").load("/static/svg/svg-defs.svg");-->
-
-<!--    </script>-->
-<!--</body>-->
-<!--</html>-->
+</div>

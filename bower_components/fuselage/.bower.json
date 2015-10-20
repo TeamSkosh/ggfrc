@@ -1,0 +1,40 @@
+{
+  "name": "fuselage",
+  "version": "1.0.2",
+  "authors": "Skosh Interactive, L.L.C",
+  "description": "A sass-based, mobile-first front-end framework aimed at developer productivity and structural composability.",
+  "main": [
+    "scss/fuselage.scss"
+  ],
+  "ignore": [
+    "*.map",
+    "*.md",
+    ".bowerrc",
+    ".gitignore",
+    "bower.json",
+    "Gruntfile.js",
+    "index.html",
+    "package.json"
+  ],
+  "keywords": [
+    "composable",
+    "css",
+    "fuselage",
+    "front-end",
+    "framework",
+    "mobile-first",
+    "responsive",
+    "sass"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/TeamSkosh/fuselage",
+  "_release": "1.0.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.2",
+    "commit": "2dbb848cef13e4a561d5ce8a5fc6bb623e542333"
+  },
+  "_source": "git://github.com/TeamSkosh/fuselage.git",
+  "_target": "~1.0.2",
+  "_originalSource": "fuselage"
+}
